@@ -1,17 +1,17 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.Master.cs" Inherits="CADA.Portal.MySit" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.Master.cs" Inherits="CADA.Portal.MySite" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
     <link rel="Stylesheet" href="~/Content/@Styles/Site.css" type="text/css" />
-    <script type="text/javascript" src="<%=Request.ApplicationPath %>Content/@Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<%=Request.ApplicationPath %>/Content/@Scripts/jquery-1.8.3.min.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <section id="container">
+    <div id="container">
         <header>
             <div id="logo">
                 <a runat="server" href="<%$RouteUrl:routename=default %>">
@@ -29,7 +29,21 @@
                 </ul>
                 <div id="social_media">
                     <div class="develop">
-                        分享插件</div>
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style">
+                            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">分享到：</a><a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_weixin"></a>
+                        </div>
+                        <script type="text/javascript">
+                            var jiathis_config = {
+                                summary: "Summary",
+                                title: "Title",
+                                shortUrl: true,
+                                hideMore: false
+                            }
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1394157903591567" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+                    </div>
                 </div>
             </div>
         </header>
@@ -46,16 +60,30 @@
                     <a>项目报告</a>
                 </div>
             </div>
-            <div class="mainContent">
-                <div class="clearfix">
+            <div class="clearfix">
+            </div>
+            <div class="content_wrap">
+                <div id="mainContent">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
                 </div>
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
                 <div class="clearfix">
                 </div>
             </div>
+            <script type="text/javascript">
+                $(function () {
+                    $.ajax({
+                        url: 'Sponsorship/Index.htm',
+                        type: 'GET',
+                        success: function (data) {
+                            $('#mainContent').html(data);
+                            console.info(data);
+                        }
+                    });
+                });
+            </script>
         </section>
-    </section>
+    </div>
     <footer>
         <div id="container">
             <div class="copyright">

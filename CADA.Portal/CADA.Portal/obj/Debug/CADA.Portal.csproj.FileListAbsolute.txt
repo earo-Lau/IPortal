@@ -2,3 +2,8 @@ D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.dll
 D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.pdb
 D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.dll
 D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.pdb
+D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.csprojResolveAssemblyReference.cache
+D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.DAL.dll
+D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.Model.dll
+D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.DAL.pdb
+D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.Model.pdb

@@ -5,11 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CADA.Portal
+namespace CADA.Portal.Sponsorship
 {
-    public partial class MySite : System.Web.UI.MasterPage
+    public partial class Index : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSuu_Click(object sender, EventArgs e)
         {
 
         }

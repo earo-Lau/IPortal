@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CADA.Portal.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="CADAPortalModelStoreContainer">
+          <EntitySet Name="HomePage_Message" EntityType="CADA.Portal.Model.Store.HomePage_Message" store:Type="Tables" store:Schema="dbo" store:Name="HomePage_Message">
+            <DefiningQuery>SELECT 
+      [HomePage_Message].[SID] AS [SID], 
+      [HomePage_Message].[Category] AS [Category], 
+      [HomePage_Message].[Title_CN] AS [Title_CN], 
+      [HomePage_Message].[Title_EN] AS [Title_EN], 
+      [HomePage_Message].[Title_Image] AS [Title_Image], 
+      [HomePage_Message].[Body_Title] AS [Body_Title], 
+      [HomePage_Message].[Body_Message] AS [Body_Message]
+      FROM [dbo].[HomePage_Message] AS [HomePage_Message]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="HomePage_Message_Log" EntityType="CADA.Portal.Model.Store.HomePage_Message_Log" store:Type="Tables" store:Schema="dbo" store:Name="HomePage_Message_Log">
+            <DefiningQuery>SELECT 
+      [HomePage_Message_Log].[SID] AS [SID], 
+      [HomePage_Message_Log].[Category] AS [Category], 
+      [HomePage_Message_Log].[Title_CN] AS [Title_CN], 
+      [HomePage_Message_Log].[Title_EN] AS [Title_EN], 
+      [HomePage_Message_Log].[Title_Image] AS [Title_Image], 
+      [HomePage_Message_Log].[Body_Title] AS [Body_Title], 
+      [HomePage_Message_Log].[Body_Message] AS [Body_Message], 
+      [HomePage_Message_Log].[CreateDay] AS [CreateDay], 
+      [HomePage_Message_Log].[CreateBy] AS [CreateBy], 
+      [HomePage_Message_Log].[CreateName] AS [CreateName], 
+      [HomePage_Message_Log].[Action] AS [Action]
+      FROM [dbo].[HomePage_Message_Log] AS [HomePage_Message_Log]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="YearReportMain" EntityType="CADA.Portal.Model.Store.YearReportMain" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="YearReportPhoto" EntityType="CADA.Portal.Model.Store.YearReportPhoto" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.HomePage_Message”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="HomePage_Message">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+          <Property Name="Category" Type="varchar" MaxLength="36" />
+          <Property Name="Title_CN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Title_EN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Title_Image" Type="varchar" MaxLength="200" />
+          <Property Name="Body_Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Body_Message" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.HomePage_Message_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="HomePage_Message_Log">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+          <Property Name="Category" Type="varchar" MaxLength="36" />
+          <Property Name="Title_CN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Title_EN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Title_Image" Type="varchar" MaxLength="200" />
+          <Property Name="Body_Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Body_Message" Type="nvarchar" MaxLength="300" />
+          <Property Name="CreateDay" Type="datetime" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+          <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+          <Property Name="Action" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="YearReportMain">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+          <Property Name="ReportYear" Type="decimal" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="Video" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="VideoRemark" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="YearReportPhoto">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+          <Property Name="YearReportMainSID" Type="varchar" Nullable="false" MaxLength="36" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CADA.Portal.Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="CADA_PortalEntities" annotation:LazyLoadingEnabled="true" a:TypeAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+          <EntitySet Name="HomePage_Message" EntityType="CADA.Portal.Model.HomePage_Message" />
+          <EntitySet Name="HomePage_Message_Log" EntityType="CADA.Portal.Model.HomePage_Message_Log" />
+          <EntitySet Name="YearReportMain" EntityType="CADA.Portal.Model.YearReportMain" />
+          <EntitySet Name="YearReportPhoto" EntityType="CADA.Portal.Model.YearReportPhoto" />
+        </EntityContainer>
+        <EntityType Name="HomePage_Message">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="Title_CN" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Title_EN" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Title_Image" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Body_Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Body_Message" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HomePage_Message_Log">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="Title_CN" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Title_EN" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Title_Image" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Body_Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Body_Message" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="CreateDay" Type="DateTime" />
+          <Property Name="CreateBy" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreateName" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="YearReportMain">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="ReportYear" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Video" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="VideoRemark" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="YearReportPhoto">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="YearReportMainSID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CADAPortalModelStoreContainer" CdmEntityContainer="CADA_PortalEntities">
+          <EntitySetMapping Name="HomePage_Message">
+            <EntityTypeMapping TypeName="CADA.Portal.Model.HomePage_Message">
+              <MappingFragment StoreEntitySet="HomePage_Message">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Title_CN" ColumnName="Title_CN" />
+                <ScalarProperty Name="Title_EN" ColumnName="Title_EN" />
+                <ScalarProperty Name="Title_Image" ColumnName="Title_Image" />
+                <ScalarProperty Name="Body_Title" ColumnName="Body_Title" />
+                <ScalarProperty Name="Body_Message" ColumnName="Body_Message" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HomePage_Message_Log">
+            <EntityTypeMapping TypeName="CADA.Portal.Model.HomePage_Message_Log">
+              <MappingFragment StoreEntitySet="HomePage_Message_Log">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Title_CN" ColumnName="Title_CN" />
+                <ScalarProperty Name="Title_EN" ColumnName="Title_EN" />
+                <ScalarProperty Name="Title_Image" ColumnName="Title_Image" />
+                <ScalarProperty Name="Body_Title" ColumnName="Body_Title" />
+                <ScalarProperty Name="Body_Message" ColumnName="Body_Message" />
+                <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YearReportMain">
+            <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportMain">
+              <MappingFragment StoreEntitySet="YearReportMain">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="ReportYear" ColumnName="ReportYear" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Video" ColumnName="Video" />
+                <ScalarProperty Name="VideoRemark" ColumnName="VideoRemark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YearReportPhoto">
+            <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportPhoto">
+              <MappingFragment StoreEntitySet="YearReportPhoto">
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="YearReportMainSID" ColumnName="YearReportMainSID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="CADA.Portal.DataContext">
+        <EntityTypeShape EntityType="CADA.Portal.Model.HomePage_Message" Width="1.5" PointX="0.75" PointY="0.625" Height="2.3520719401041665" IsExpanded="true" />
+        <EntityTypeShape EntityType="CADA.Portal.Model.HomePage_Message_Log" Width="1.5" PointX="2.75" PointY="0.75" Height="3.1161507161458326" IsExpanded="true" />
+        <EntityTypeShape EntityType="CADA.Portal.Model.YearReportMain" Width="1.5" PointX="2.625" PointY="4.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="CADA.Portal.Model.YearReportPhoto" Width="1.5" PointX="0.75" PointY="4.75" Height="1.3969734700520817" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

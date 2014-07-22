@@ -28,9 +28,9 @@
     <div id="Inbox" class="one_third_last">
         <div class="widget">
             <div class="title">
-                收信箱
+                <span class="cn">收信箱</span>
                 <br />
-                这里应该是个图片
+                <span class="en">Inbox</span>
             </div>
             <ul>
                 <asp:ListView ID="lv_Inbox" runat="server">
@@ -44,6 +44,56 @@
                     </ItemTemplate>
                 </asp:ListView>
             </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <div id="Events" class="one_third">
+        <div class="widget">
+            <div class="title">
+                <span class="cn">最新活动信息</span>
+                <br />
+                <span class="en">Latest Event</span>
+            </div>
+            <div class="info">
+                <img src="#" />
+                <h3>
+                    活动标题</h3>
+                <p>
+                    活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
+            </div>
+        </div>
+    </div>
+    <div id="Project" class="one_third">
+        <div class="widget">
+            <div class="title">
+                <span class="cn">最新项目进展</span>
+                <br />
+                <span class="en">Recent Progress of the Project</span>
+            </div>
+            <div class="info">
+                <img src="#" />
+                <h3>
+                    项目标题</h3>
+                <p>
+                    项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容</p>
+            </div>
+        </div>
+    </div>
+    <div id="Social" class="one_third_last">
+        <div class="widget">
+            <div class="title">
+                <span class="cn">社交媒体分享</span>
+                <br />
+                <span class="en">Share in Social Media</span>
+            </div>
+            <div class="info">
+                <img src="#" />
+                <h3>
+                    活动标题</h3>
+                <p>
+                    活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
+            </div>
         </div>
     </div>
 </asp:Content>

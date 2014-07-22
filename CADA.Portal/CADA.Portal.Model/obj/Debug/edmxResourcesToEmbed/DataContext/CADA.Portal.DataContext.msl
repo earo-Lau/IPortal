@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CADAPortalModelStoreContainer" CdmEntityContainer="CADA_PortalEntities">
+    <EntitySetMapping Name="HomePage_Message">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.HomePage_Message">
+        <MappingFragment StoreEntitySet="HomePage_Message">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Title_CN" ColumnName="Title_CN" />
+          <ScalarProperty Name="Title_EN" ColumnName="Title_EN" />
+          <ScalarProperty Name="Title_Image" ColumnName="Title_Image" />
+          <ScalarProperty Name="Body_Title" ColumnName="Body_Title" />
+          <ScalarProperty Name="Body_Message" ColumnName="Body_Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomePage_Message_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.HomePage_Message_Log">
+        <MappingFragment StoreEntitySet="HomePage_Message_Log">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Title_CN" ColumnName="Title_CN" />
+          <ScalarProperty Name="Title_EN" ColumnName="Title_EN" />
+          <ScalarProperty Name="Title_Image" ColumnName="Title_Image" />
+          <ScalarProperty Name="Body_Title" ColumnName="Body_Title" />
+          <ScalarProperty Name="Body_Message" ColumnName="Body_Message" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReportMain">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportMain">
+        <MappingFragment StoreEntitySet="YearReportMain">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="ReportYear" ColumnName="ReportYear" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="VideoRemark" ColumnName="VideoRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReportPhoto">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportPhoto">
+        <MappingFragment StoreEntitySet="YearReportPhoto">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="YearReportMainSID" ColumnName="YearReportMainSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
