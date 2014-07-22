@@ -20,6 +20,7 @@ namespace CADA.Portal.DAL.HomePage
             {
                 var message = (from msg in context.HomePage_Message
                                select msg);
+                //var message = context.CreateQuery<HomePage_Message>("SELECT VALUE msg FROM HomePage_Message msg");
 
                 return message;
             }

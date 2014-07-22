@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal", "CADA.Portal\CADA.Portal.csproj", "{8942A35A-B787-4C7F-83FE-01B148906E02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal.Model", "CADA.Portal.Model\CADA.Portal.Model.csproj", "{DC01D0BD-564E-428B-BED5-966E43552E71}"

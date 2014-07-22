@@ -34,3 +34,12 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+CADA.Portal/Backup/*
+CADA.Portal/Backup1/*
+CADA.Portal/CADA.Portal.sln
+CADA.Portal/UpgradeLog.htm
+CADA.Portal/UpgradeLog2.htm
+CADA.Portal/CADA.Portal/obj/*
+CADA.Portal/CADA.Portal/bin/*
+*.cache
