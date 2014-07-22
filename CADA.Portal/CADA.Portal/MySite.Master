@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.Master.cs" Inherits="CADA.Portal.MySit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" href="~/Content/@Styles/Site.css" type="text/css" />
+    <script type="text/javascript" src="<%=Request.ApplicationPath %>Content/@Scripts/jquery-1.8.3.min.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="container">
+        <header>
+            <div id="logo">
+                <a runat="server" href="<%$RouteUrl:routename=default %>">
+                    <div class="develop">
+                        Logo</div>
+                </a>
+            </div>
+            <div class="top_right">
+                <ul class="top_nav">
+                    <li><a href="#">我要捐款</a> </li>
+                    <li><a href="#">常见问答</a> </li>
+                    <li><a href="#">联系我们</a> </li>
+                    <li><a href="#">搜索</a> </li>
+                    <li class="lang"><a href="#">English</a> </li>
+                </ul>
+                <div id="social_media">
+                    <div class="develop">
+                        分享插件</div>
+                </div>
+            </div>
+        </header>
+        <section id="contant">
+            <div id="nav" class="clearfix">
+                <ul>
+                    <li><a>我的主页</a></li>
+                    <li><a>我助养的儿童</a></li>
+                    <li><a>我支持的项目</a></li>
+                    <li><a>我还可以参加</a></li>
+                    <li><a>助养指南</a></li>
+                </ul>
+                <div id="nav_report">
+                    <a>项目报告</a>
+                </div>
+            </div>
+            <div class="mainContent">
+                <div class="clearfix">
+                </div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="clearfix">
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div id="container">
+            <div class="copyright">
+                <p>
+                    ©2012-2014 集善残疾儿童助养网站版权所有
+                </p>
+                <p>
+                    注:2013-2014年度[体验饥饿]为世界宣明会授权中国残疾人福利基金会举办之慈善活动.
+                </p>
+                <p>
+                    备案号
+                </p>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>
