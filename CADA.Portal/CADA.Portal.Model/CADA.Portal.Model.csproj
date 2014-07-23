@@ -12,6 +12,10 @@
     <AssemblyName>CADA.Portal.Model</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +54,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CADA.Portal.DataContext.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DataContext\CADA_PortalEntities.cs" />
     <Compile Include="DataContext\MyObjectContext.cs" />
     <Compile Include="MyConstant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,7 +68,9 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

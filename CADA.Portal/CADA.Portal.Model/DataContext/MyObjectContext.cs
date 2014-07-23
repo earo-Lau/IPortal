@@ -9,7 +9,7 @@ using System.Data.Objects;
 
 namespace CADA.Portal.Model.DataContext
 {
-    public static class MyObjectContext
+    internal static class MyObjectContext
     {
         private static string __ConnectionString;
         public static string ConnectionString

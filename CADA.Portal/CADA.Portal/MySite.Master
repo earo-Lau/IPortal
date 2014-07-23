@@ -5,6 +5,16 @@
 <head runat="server">
     <title></title>
     <link rel="Stylesheet" href="~/Content/@Styles/Site.css" type="text/css" />
+    <!--[if lte IE 8]> 
+<noscript>
+     <style>.html5-wrappers{display:none!important;}</style>
+     <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+     </div>
+</noscript>
+<![endif]-->
+    <!--[if lt IE9]> 
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
     <script type="text/javascript" src="<%=Request.ApplicationPath %>/Content/@Scripts/jquery-1.8.3.min.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -70,18 +80,6 @@
                 <div class="clearfix">
                 </div>
             </div>
-            <script type="text/javascript">
-                $(function () {
-                    $.ajax({
-                        url: 'Sponsorship/Index.htm',
-                        type: 'GET',
-                        success: function (data) {
-                            $('#mainContent').html(data);
-                            console.info(data);
-                        }
-                    });
-                });
-            </script>
         </section>
     </div>
     <footer>

@@ -24,7 +24,7 @@ namespace CADA.Portal.Model
     /// <summary>
     /// 没有元数据文档可用。
     /// </summary>
-    public partial class CADA_PortalEntities : ObjectContext
+    internal partial class CADA_PortalEntities : ObjectContext
     {
         #region 构造函数
     

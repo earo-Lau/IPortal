@@ -13,10 +13,5 @@ namespace CADA.Portal.Sponsorship
         {
 
         }
-
-        protected void btnSuu_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

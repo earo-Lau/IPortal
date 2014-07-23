@@ -20,8 +20,6 @@ namespace CADA.Portal
 
         protected void Init()
         {
-            var _dAL = DAL.DALFactory.GetDataReader<Model.HomePage_Message>(MyConstant._HOMEPAGEDAL);
-            var data = _dAL.ReadData();
             object[] obj = new object[] { 1, 2, 3, 4, 5 };
             lv_children.DataSource = obj;
             lv_children.DataBind();
