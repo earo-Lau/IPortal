@@ -11,7 +11,20 @@ namespace CADA.Portal.Sponsorship
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master._Sponsorship = "active";
+            if (!IsPostBack)
+            {
+                Init();
+            }
+        }
 
+        protected void Init()
+        {
+            object[] obj = new object[] { 1, 2, 3, 4, 5 };
+            lv_children.DataSource = obj;
+            lv_children.DataBind();
+
+            lit_donors.Text = "Lily WU; Billy; David Lam;";
         }
     }
 }

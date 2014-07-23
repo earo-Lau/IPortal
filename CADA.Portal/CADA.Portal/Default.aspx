@@ -1,5 +1,6 @@
-﻿<%@ Page Title="主页" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CADA.Portal._Default" %>
+﻿<%@ Page Title="我的主页" Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CADA.Portal._Default" %>
 
+<%@ MasterType VirtualPath="~/MySite.master" %>
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">

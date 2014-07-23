@@ -12,6 +12,7 @@ namespace CADA.Portal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master._Default = "active";
             if (!IsPostBack)
             {
                 Init();
