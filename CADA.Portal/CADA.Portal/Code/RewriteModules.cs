@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Routing;
+using System.Text;
 
 namespace CADA.Portal.Code
 {
@@ -10,7 +11,6 @@ namespace CADA.Portal.Code
     {
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
 
         public void Init(HttpApplication context)
@@ -28,11 +28,20 @@ namespace CADA.Portal.Code
                 && routeData.Values.ContainsKey("ajaxAction")
                 && routeData.Values["ajaxAction"] != null)
             {
+                StringBuilder strb = new StringBuilder();
+                
                 var action = routeData.Values["ajaxAction"].ToString();
                 var path = ((PageRouteHandler)routeData.RouteHandler).VirtualPath.ToString();
-                path = path.Substring(0, path.LastIndexOf('/') + 1);
+                path = path.Substring(0, path.LastIndexOf('/'));
+                strb.AppendFormat("{0}/{1}.aspx", path, action);
+                
+                if (routeData.Values.ContainsKey("id") && routeData.Values["id"] != null)
+                {
+                    var id = routeData.Values["id"].ToString();
+                    strb.AppendFormat("?id={0}", id);
+                }
 
-                HttpContext.Current.RewritePath(path + action + ".aspx");
+                HttpContext.Current.RewritePath(strb.ToString());
             }
         }
     }

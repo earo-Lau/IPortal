@@ -29,7 +29,7 @@
             </div>
             <div class="three_fourth_last">
                 <div class="share_media">
-                    <!-- JiaThis Button BEGIN -->
+                    <%--<!-- JiaThis Button BEGIN -->
                     <div class="jiathis_style">
                         <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">分享：</a>
                     </div>
@@ -42,7 +42,7 @@
                         }
                     </script>
                     <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1394157903591567" charset="utf-8"></script>
-                    <!-- JiaThis Button END -->
+                    <!-- JiaThis Button END -->--%>
                 </div>
                 <section>
                     <article>
@@ -73,10 +73,10 @@
         </div>
         <div id="Child_Tabs" class="tab-container" role="tablist">
             <ul class="nav nav-tabs">
-                <li class="active"><a runat="server" href="~/MySponsorship/MyIntroduce">我的介绍</a></li>
-                <li><a href="#">我的小区介绍</a></li>
-                <li><a href="#">我和你的贺卡</a></li>
-                <li><a href="#">我在活动中收获了</a></li>
+                <li class="active"><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyIntroduce"}) %>">我的介绍</a></li>
+                <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyCommunity"}) %>">我的小区介绍</a></li>
+                <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="GreetingCards"}) %>">我和你的贺卡</a></li>
+                <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyActivities"}) %>">我在活动中收获了</a></li>
             </ul>
             <div id="tab-page" class="tab-page">
                 ppppppp
@@ -86,7 +86,7 @@
 
                     $('#Child_Tabs a').click(function (e) {
                         e.preventDefault();
-                        $('.nav-tabs li').removeClass('active');
+                        $('#Child_Tabs .nav-tabs li').removeClass('active');
                         $(this).parent().addClass('active');
                         $.ajax({
                             url: $(this).attr("href"),
@@ -96,11 +96,26 @@
                             }
                         });
                     })
+                    $('#Child_Tabs li.active a').click();
                 });
             </script>
         </div>
     </div>
-    <div class="one_fourth_last" style="background: #fff143;">
-        aside
-    </div>
+    <%--<div id="asideBar" class="one_fourth_last" style="background: #f9906f;">
+        <h3 class="centerText">
+            其他等待捐助的
+        </h3>
+        <div id="waiting_Child">
+            <asp:ListView ID="lv_Waiting" runat="server">
+                <ItemTemplate>
+                    <div class="childBlock">
+                        <img src="xxx" />
+                        <br />
+                        <asp:Button ID="btn_Sponsor_Him" runat="server" Text="立即助养" CssClass="button blue" /></div>
+                </ItemTemplate>
+            </asp:ListView>
+        </div>
+    </div>--%>
+    <aside:Children CssClass="one_fourth_last" runat="server">
+    </aside:Children>
 </asp:Content>

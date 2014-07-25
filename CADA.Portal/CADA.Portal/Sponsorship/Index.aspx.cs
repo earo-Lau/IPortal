@@ -9,8 +9,11 @@ namespace CADA.Portal.Sponsorship
 {
     public partial class Index : System.Web.UI.Page
     {
+        public string ChildId { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            ChildId = "0x54";
             Master._Sponsorship = "active";
             if (!IsPostBack)
             {
@@ -25,6 +28,7 @@ namespace CADA.Portal.Sponsorship
             lv_children.DataBind();
 
             lit_donors.Text = "Lily WU; Billy; David Lam;";
+
         }
     }
 }

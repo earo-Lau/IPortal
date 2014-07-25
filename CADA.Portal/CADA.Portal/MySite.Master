@@ -32,7 +32,7 @@
                 </ul>
                 <div id="social_media">
                     <div class="develop">
-                        <!-- JiaThis Button BEGIN -->
+                        <%--<!-- JiaThis Button BEGIN -->
                         <div class="jiathis_style">
                             <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">分享到：</a><a class="jiathis_button_qzone"></a> <a class="jiathis_button_tsina"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_weixin"></a>
                         </div>
@@ -45,7 +45,7 @@
                             }
                         </script>
                         <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1394157903591567" charset="utf-8"></script>
-                        <!-- JiaThis Button END -->
+                        <!-- JiaThis Button END -->--%>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
         <div class="clearfix">
         </div>
         <section id="contant">
-            <div id="nav">
+            <div id="nav" class="clearfix">
                 <%--<asp:Menu ID="NavigationMenu" runat="server" CssClass="" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Index" Text="我的主页"></asp:MenuItem>
@@ -64,8 +64,8 @@
                     </Items>
                 </asp:Menu>--%>
                 <ul class="nav nav-tabs">
-                    <li class='<%= _Default %>' ><a runat="server" href="~/Index" >我的主页</a></li>
-                    <li class='<%= _Sponsorship %>'><a  runat="server" href="~/MySponsorship">我助养的儿童</a></li>
+                    <li class='<%= _Default %>'><a runat="server" href="~/Index">我的主页</a></li>
+                    <li class='<%= _Sponsorship %>'><a runat="server" href="~/MySponsorship">我助养的儿童</a></li>
                     <li><a>我支持的项目</a></li>
                     <li><a>我还可以参加</a></li>
                     <li><a>助养指南</a></li>

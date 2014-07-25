@@ -61,6 +61,15 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Content\%40Scripts\carouFredSel\AjaxRun.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\helper-plugins\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\helper-plugins\jquery.mousewheel.min.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\helper-plugins\jquery.touchSwipe.min.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\helper-plugins\jquery.transit.min.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\images\carousel_nav.png" />
+    <Content Include="Content\%40Scripts\carouFredSel\jquery.carouFredSel-6.2.1-packed.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\jquery.carouFredSel-6.2.1.js" />
+    <Content Include="Content\%40Scripts\carouFredSel\style.css" />
     <Content Include="Content\%40Scripts\jquery-1.8.3.min.js" />
     <Content Include="Content\%40Styles\ivory.css" />
     <Content Include="Content\%40Styles\Site.css" />
@@ -73,8 +82,13 @@
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Sponsorship\GreetingCards.aspx" />
     <Content Include="Sponsorship\Index.aspx" />
+    <Content Include="Sponsorship\MyActivities.aspx" />
+    <Content Include="Sponsorship\MyCommunity.aspx" />
     <Content Include="Sponsorship\MyIntroduce.aspx" />
+    <Content Include="UCControl\ASide_Children.ascx" />
+    <Content Include="UCControl\Slider.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -146,12 +160,33 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Sponsorship\GreetingCards.aspx.cs">
+      <DependentUpon>GreetingCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sponsorship\GreetingCards.aspx.designer.cs">
+      <DependentUpon>GreetingCards.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sponsorship\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sponsorship\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsorship\MyActivities.aspx.cs">
+      <DependentUpon>MyActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sponsorship\MyActivities.aspx.designer.cs">
+      <DependentUpon>MyActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sponsorship\MyCommunity.aspx.cs">
+      <DependentUpon>MyCommunity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sponsorship\MyCommunity.aspx.designer.cs">
+      <DependentUpon>MyCommunity.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sponsorship\MyIntroduce.aspx.cs">
       <DependentUpon>MyIntroduce.aspx</DependentUpon>
@@ -160,10 +195,23 @@
     <Compile Include="Sponsorship\MyIntroduce.aspx.designer.cs">
       <DependentUpon>MyIntroduce.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UCControl\ASide_Children.ascx.cs">
+      <DependentUpon>ASide_Children.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCControl\ASide_Children.ascx.designer.cs">
+      <DependentUpon>ASide_Children.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\Slider.ascx.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCControl\Slider.ascx.designer.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="UCControl\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />

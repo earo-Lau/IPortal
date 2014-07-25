@@ -17,7 +17,8 @@ namespace CADA.Portal.Code
             routes.Ignore("*.png");
 
             routes.MapPageRoute("default", "Index", "~/Default.aspx");
-            routes.MapPageRoute("sponsorship", "MySponsorship/{*ajaxAction}", "~/Sponsorship/Index.aspx");
+            routes.MapPageRoute("sponsorship", "MySponsorship/{id}/{*ajaxAction}", "~/Sponsorship/Index.aspx", false
+                , new RouteValueDictionary() { { "id", "*" } });
         }
     }
 }

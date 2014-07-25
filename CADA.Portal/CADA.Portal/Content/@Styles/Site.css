@@ -101,6 +101,11 @@ first child of the left and right table columns */
     margin-top: 0px;
 }
 
+.centerText
+{
+    text-align:center;
+}
+
 /*  Header
 ----------------------------------------------------------*/
 header
@@ -161,11 +166,10 @@ ul.top_nav li.lang
 }
 #social_media .develop
 {
-    width:170px;
     height:25px;
     background:#ECF3EC;
     float:right;
-    padding:7px 0 0 7px;
+    padding:8px 8px 0 8px;
 }
 
 /* Footer
@@ -334,6 +338,7 @@ footer .container .copyright p
 
 #nav ul
 {
+    float:left;
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -381,18 +386,17 @@ footer .container .copyright p
 #nav_report
 {
     float:right;
-    height:27px;
-    position:relative;
-    top:-27px;
+    margin-bottom: -1px;
 }
 
 #nav_report a
 {
+    height:22px;
     color:#fff;
     background:#FBBF13;
-    line-height: 1.35em;
-    padding: 5px 20px;
     display: block;
+    line-height: 1.35em;
+    padding: 10px 15px;
     text-decoration: none;
     white-space: nowrap;
     font-weight:bold;
@@ -647,6 +651,43 @@ footer .container .copyright p
     height:130px;
 }
 
+/* aSideBar
+--------------------------------------------------------*/
+#asideBar
+{
+}
+
+#asideBar h3
+{
+    font: bold 14px/25px "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+#aSide_Child
+{
+    width:100%;
+    float:left;
+    height:auto;
+}
+
+#aSide_Child .childBlock
+{
+    margin-bottom:13px;
+    text-align:center;
+}
+
+.childBlock img
+{
+    height:170px;
+    width:170px;
+    margin:8px 0 0 0;
+}
+
+.childBlock .button
+{
+    width:170px;
+    border-radius:0;
+}
+
 /* Sponsorship Chlidren
 --------------------------------------------------------*/
 .title_Left
@@ -820,12 +861,12 @@ footer .container .copyright p
 }
 
 .tab-container .tab-page
-{	heiight: auto;
+{	
+    height: auto;
 	font: 14px/25px "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	background-color: #fff;
 	color: #888;
 	display:block;
-i left;
 	padding: 10px;
 	border: 1px solid r#bp
 	   bor	   borddcfd2d7;
@@ -836,3 +877,25 @@ i left;
 	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
+
+/* MyIntroduce
+-------------------------------------------------------*/
+#Intro_Viedio
+{
+    width:480px;
+    margin:10px auto 20px;
+}
+.myViedio
+{
+    position:relative;
+    height:320px;
+    width:480px;
+    margin:0 auto;
+    background:#161823;
+}
+
+#Intro_Content
+{
+    
+}
+
