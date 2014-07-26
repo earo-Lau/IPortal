@@ -40,6 +40,7 @@
                             <div class="new_info">
                                 <a>
                                     <%#Eval("Info") %></a> <span class="date">2014-07-21</span>
+                                <div class="clear_placeholder"></div>
                             </div>
                         </li>
                     </ItemTemplate>
@@ -47,7 +48,7 @@
             </ul>
         </div>
     </div>
-    <div class="clearfix">
+    <div class="clear clearfix">
     </div>
     <div id="Events" class="one_third">
         <div class="widget">

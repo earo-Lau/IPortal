@@ -6,9 +6,9 @@
     <link rel="Stylesheet" href="~/Content/@Styles/Site.css" type="text/css" />
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="Content/@Scripts/html5forIE.js" ></script>
     <![endif]-->
-    <script type="text/javascript" src="<%=Request.ApplicationPath %>/Content/@Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/@Scripts/jquery-1.8.3.min.js") %>"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -30,6 +30,7 @@
                     <li><a href="#">搜索</a> </li>
                     <li class="lang"><a href="#">English</a> </li>
                 </ul>
+            <div style="clear:right;"></div>
                 <div id="social_media">
                     <div class="develop">
                         <%--<!-- JiaThis Button BEGIN -->
@@ -53,7 +54,7 @@
         <div class="clearfix">
         </div>
         <section id="contant">
-            <div id="nav" class="clearfix">
+            <div id="nav">
                 <%--<asp:Menu ID="NavigationMenu" runat="server" CssClass="" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Index" Text="我的主页"></asp:MenuItem>
@@ -74,12 +75,12 @@
                     <a>项目报告</a>
                 </div>
             </div>
-            <div class="content_wrap">
+            <div class="content_wrap clear" >
                 <div id="mainContent">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <div class="clearfix">
+                <div class="clear_placeholder">
                 </div>
             </div>
         </section>

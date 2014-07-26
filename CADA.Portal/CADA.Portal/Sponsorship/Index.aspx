@@ -68,7 +68,7 @@
                     </div>
                 </section>
             </div>
-            <div class="clearfix">
+            <div class="clear_placeholder">
             </div>
         </div>
         <div id="Child_Tabs" class="tab-container" role="tablist">
@@ -78,8 +78,10 @@
                 <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="GreetingCards"}) %>">我和你的贺卡</a></li>
                 <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyActivities"}) %>">我在活动中收获了</a></li>
             </ul>
+            <div class="tab-wrap">
             <div id="tab-page" class="tab-page">
-                ppppppp
+                
+            </div>
             </div>
             <script type="text/javascript">
                 $(function () {
