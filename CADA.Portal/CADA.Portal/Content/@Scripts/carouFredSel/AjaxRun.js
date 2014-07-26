@@ -25,7 +25,7 @@ $('#thumbs').carouFredSel({
             max: 6
         },
         width: 150,
-        height: '66%'
+        height: 100
     }
 });
 

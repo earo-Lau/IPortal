@@ -7,3 +7,13 @@ D:\project\CADA\CADA.Portal\CADA.Portal\bin\CADA.Portal.Model.pdb
 D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.csprojResolveAssemblyReference.cache
 D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.dll
 D:\project\CADA\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.pdb
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.dll.config
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.dll
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.pdb
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.DAL.dll
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.Model.dll
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.DAL.pdb
+G:\Git\IPortal\CADA.Portal\CADA.Portal\bin\CADA.Portal.Model.pdb
+G:\Git\IPortal\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.csprojResolveAssemblyReference.cache
+G:\Git\IPortal\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.dll
+G:\Git\IPortal\CADA.Portal\CADA.Portal\obj\Debug\CADA.Portal.pdb

@@ -223,7 +223,7 @@ footer {
 .one_half {
     width: 46.10%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     margin-bottom: 20px;
     padding: 10px 1.7%;
 }
@@ -253,7 +253,7 @@ footer {
 .two_third {
     width: 62.40%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     padding: 10px 1.7%;
 }
 
@@ -267,7 +267,7 @@ footer {
 .one_fourth {
     width: 20.15%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     margin-bottom: 20px;
     padding: 10px 1.7%;
 }
@@ -282,7 +282,7 @@ footer {
 .three_fourth {
     width: 72.05%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     margin-bottom: 20px;
     padding: 10px 1.7%;
 }
@@ -297,7 +297,7 @@ footer {
 .one_fifth {
     width: 14.96%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     margin-bottom: 20px;
     padding: 10px 1.7%;
 }
@@ -312,7 +312,7 @@ footer {
 .four_fifth {
     width: 77.240%;
     float: left;
-    margin-right: 1.80%;
+    margin-right: 1.00%;
     margin-bottom: 20px;
     padding: 10px 1.7%;
 }
@@ -878,4 +878,23 @@ footer {
 }
 
 #Intro_Content {
+}
+
+/* Greeting Cards
+-------------------------------------------------------*/
+.Cards_Wrap{
+    text-align:center;
+}
+.Cards_Wrap table th{
+    text-align:center;
+}
+table.Card td{
+    padding:10px;
+}
+.Cards_Wrap table.Card.left{
+    border-right:3px solid #333;
+}
+
+.Card img{
+    width:80%;
 }
