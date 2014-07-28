@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Slider.ascx.cs" Inherits="CADA.Portal.UCControl.Slider" %>
-<link type="text/css" rel="stylesheet" href="<%=ResolveClientUrl("~/Content/@Scripts/carouFredSel/style.css") %>" />
-<script src="<%=ResolveClientUrl("~/Content/@Scripts/carouFredSel/jquery.carouFredSel-6.0.4-packed.js") %>" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="<%=ResolveUrl("~/Content/@Scripts/carouFredSel/style.css") %>" />
+<script src="<%=ResolveUrl("~/Content/@Scripts/carouFredSel/jquery.carouFredSel-6.0.4-packed.js") %>" type="text/javascript"></script>
 <%--Nivo Slider
 
         <div class="slider-wrapper theme-bar">
@@ -99,4 +99,4 @@
         <a id="prev" href="#"></a><a id="next" href="#"></a>
     </div>
 </div>
-<script type="text/javascript" src="<%=ResolveClientUrl("~/Content/@Scripts/carouFredSel/AjaxRun.js") %>"></script>
+<script type="text/javascript" src="<%=ResolveUrl("~/Content/@Scripts/carouFredSel/AjaxRun.js") %>"></script>

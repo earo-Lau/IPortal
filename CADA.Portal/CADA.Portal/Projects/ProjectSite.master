@@ -1,0 +1,5 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/cada.portal/MySite.Master" AutoEventWireup="true" CodeBehind="ProjectSite.master.cs" Inherits="CADA.Portal.Projects.ProjectSite" %>
+
+<%@ MasterType VirtualPath="~/MySite.master" %>
+
+<asp:Content ID="mainContent" runat="server" ContentPlaceHolderID="MainContent"></asp:Content>

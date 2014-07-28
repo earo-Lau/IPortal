@@ -19,15 +19,19 @@ namespace CADA.Portal.Sponsorship
 
         private void Init()
         {
-            object[] obj = new object[] {
-                new {pic_Path_Left="xxx",pic_Alt_Left="xxx", Card_Content_Left="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"
-                    ,pic_Path_Right="xxx", pic_Alt_right="xxx", Card_Content_Right="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字" }
-                ,new {pic_Path_Left="xxx",pic_Alt_Left="xxx",Card_Content_Left="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"
-                    ,pic_Path_Right="", pic_Alt_right="",Card_Content_Right="" }
+            object[] obj_left = new object[] {
+                new {pic_Path="xxx",Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"}
+                ,new {pic_Path="xxx",Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"}
+            };
+            object[] obj_right = new object[]{
+                new {pic_Path="xxx", Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字" }
             };
 
-            lv_Cards.DataSource = obj;
-            lv_Cards.DataBind();
+            lv_LeftCard.DataSource = obj_left;
+            lv_LeftCard.DataBind();
+
+            lv_RightCard.DataSource = obj_right;
+            lv_RightCard.DataBind();
         }
     }
 }

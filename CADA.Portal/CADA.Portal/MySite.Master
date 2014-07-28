@@ -9,6 +9,7 @@
         <script src="Content/@Scripts/html5forIE.js" ></script>
     <![endif]-->
     <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/@Scripts/jquery-1.8.3.min.js") %>"></script>
+    <script src="<%=ResolveClientUrl("~/Content/bootstrap/js/bootstrap.min.js") %>" type="text/javascript"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -67,7 +68,7 @@
                 <ul class="nav nav-tabs">
                     <li class='<%= _Default %>'><a runat="server" href="~/Index">我的主页</a></li>
                     <li class='<%= _Sponsorship %>'><a runat="server" href="~/MySponsorship">我助养的儿童</a></li>
-                    <li><a>我支持的项目</a></li>
+                    <li class='<%= _Project %>'><a>我支持的项目</a></li>
                     <li><a>我还可以参加</a></li>
                     <li><a>助养指南</a></li>
                 </ul>

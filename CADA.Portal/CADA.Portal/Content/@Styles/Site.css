@@ -1,4 +1,11 @@
-﻿/* DEFAULTS
+﻿/* DEV
+----------------------------------------------------------*/
+video
+{
+    background:#161823;
+}
+
+/* DEFAULTS
 ----------------------------------------------------------*/
 
 article, aside, dialog, footer, header, section, footer, nav, figure, menu {
@@ -884,6 +891,7 @@ footer {
 -------------------------------------------------------*/
 .Cards_Wrap{
     text-align:center;
+    background:url() repeat-y scroll 0 50% transparent;
 }
 .Cards_Wrap table th{
     text-align:center;
@@ -897,4 +905,15 @@ table.Card td{
 
 .Card img{
     width:80%;
+}
+
+/* Activities
+------------------------------------------------------*/
+#Manager_Video
+{
+}
+
+#Manager_Video .video_Content
+{
+    text-align:center;
 }

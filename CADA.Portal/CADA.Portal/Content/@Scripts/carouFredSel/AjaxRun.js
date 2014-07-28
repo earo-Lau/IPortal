@@ -19,13 +19,14 @@ $('#thumbs').carouFredSel({
     auto: false,
     prev: '#prev',
     next: '#next',
+    height:128,
     items: {
         visible: {
             min: 2,
             max: 6
         },
         width: 150,
-        height: 100
+        height: '66%'
     }
 });
 

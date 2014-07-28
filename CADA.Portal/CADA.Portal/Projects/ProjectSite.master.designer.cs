@@ -7,18 +7,21 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace CADA.Portal.Sponsorship {
+namespace CADA.Portal.Projects {
     
     
-    public partial class MyActivities {
+    public partial class ProjectSite {
         
         /// <summary>
-        /// lit_Content 控件。
+        /// Master 属性。
         /// </summary>
         /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// 自动生成的属性。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lit_Content;
+        public new CADA.Portal.MySite Master {
+            get {
+                return ((CADA.Portal.MySite)(base.Master));
+            }
+        }
     }
 }

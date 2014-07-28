@@ -5,16 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CADA.Portal
+namespace CADA.Portal.Projects
 {
-    public partial class MySite : System.Web.UI.MasterPage
+    public partial class Index : System.Web.UI.Page
     {
-        public string _Default { get; set; }
-        public string _Sponsorship { get; set; }
-        public string _Project { get; set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master._Project = "active";
         }
     }
 }

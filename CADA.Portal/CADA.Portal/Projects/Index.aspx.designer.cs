@@ -7,27 +7,30 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace CADA.Portal.Sponsorship {
+namespace CADA.Portal.Projects {
     
     
-    public partial class GreetingCards {
+    public partial class Index {
         
         /// <summary>
-        /// lv_LeftCard 控件。
+        /// txtLetter 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lv_LeftCard;
+        protected global::System.Web.UI.WebControls.Literal txtLetter;
         
         /// <summary>
-        /// lv_RightCard 控件。
+        /// Master 属性。
         /// </summary>
         /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// 自动生成的属性。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lv_RightCard;
+        public new CADA.Portal.MySite Master {
+            get {
+                return ((CADA.Portal.MySite)(base.Master));
+            }
+        }
     }
 }
