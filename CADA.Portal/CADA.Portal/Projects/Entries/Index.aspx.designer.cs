@@ -7,28 +7,19 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace CADA.Portal.Projects {
+namespace CADA.Portal.Projects.Entries {
     
     
-    public partial class ProjectSite {
+    public partial class Index {
         
         /// <summary>
-        /// pro_HeadContent 控件。
+        /// txtLetter 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder pro_HeadContent;
-        
-        /// <summary>
-        /// pro_MainContent 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder pro_MainContent;
+        protected global::System.Web.UI.WebControls.Literal txtLetter;
         
         /// <summary>
         /// Master 属性。
@@ -36,9 +27,9 @@ namespace CADA.Portal.Projects {
         /// <remarks>
         /// 自动生成的属性。
         /// </remarks>
-        public new CADA.Portal.MySite Master {
+        public new CADA.Portal.Projects.ProjectSite Master {
             get {
-                return ((CADA.Portal.MySite)(base.Master));
+                return ((CADA.Portal.Projects.ProjectSite)(base.Master));
             }
         }
     }

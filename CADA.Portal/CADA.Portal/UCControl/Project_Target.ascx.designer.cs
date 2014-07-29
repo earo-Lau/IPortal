@@ -7,39 +7,27 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace CADA.Portal.Projects {
+namespace CADA.Portal.UCControl {
     
     
-    public partial class ProjectSite {
+    public partial class Project_Target {
         
         /// <summary>
-        /// pro_HeadContent 控件。
+        /// pic 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder pro_HeadContent;
+        protected global::System.Web.UI.HtmlControls.HtmlImage pic;
         
         /// <summary>
-        /// pro_MainContent 控件。
+        /// lit_Target_Content 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder pro_MainContent;
-        
-        /// <summary>
-        /// Master 属性。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的属性。
-        /// </remarks>
-        public new CADA.Portal.MySite Master {
-            get {
-                return ((CADA.Portal.MySite)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.Literal lit_Target_Content;
     }
 }

@@ -1,5 +1,46 @@
-﻿<%@ Master Language="C#" MasterPageFile="~/cada.portal/MySite.Master" AutoEventWireup="true" CodeBehind="ProjectSite.master.cs" Inherits="CADA.Portal.Projects.ProjectSite" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="ProjectSite.master.cs" Inherits="CADA.Portal.Projects.ProjectSite" %>
 
 <%@ MasterType VirtualPath="~/MySite.master" %>
-
-<asp:Content ID="mainContent" runat="server" ContentPlaceHolderID="MainContent"></asp:Content>
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="HeadContent">
+    <%--<script src="<%=ResolveClientUrl("~/Content/@Scripts/lavalamp/lavalamp.js") %>" type="text/javascript"></script>--%>
+    <link href="<%=ResolveClientUrl("~/Content/@Scripts/lavalamp/styles.css") %>" rel="stylesheet" type="text/css" />
+    <%--<style>
+        #menu
+        {
+            width: 430px;
+        }
+        #menu li.second:hover ~ .current
+        {
+            left: 145px;
+        }
+        #menu li.third:hover ~ .current
+        {
+            left: 253px;
+        }
+        #menu li.fourth:hover ~ .current
+        {
+            left: 356px;
+        }
+    </style>--%>
+    <asp:ContentPlaceHolder ID="pro_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="MainContent">
+    <div class="menu_wrap">
+        <nav id="menu" class="lavalamp" style="width:480px;">
+            <ul>
+                <li class="<%=_Index %>"><a href="<%=GetRouteUrl("project", new{ id="", entry="Index" }) %>">项目介绍</a></li>
+                <li class="<%=_BJ %>"><a href="<%=GetRouteUrl("project", new{ id="BJ", entry="Entries/Index" }) %>">甘肃宝鸡</a></li>
+                <li class="<%=_DX %>"><a href="<%=GetRouteUrl("project", new{ id="DX", entry="Entries/Index" }) %>">陕西定西</a></li>
+                <li class="<%=_JZ %>"><a href="<%=GetRouteUrl("project", new{ id="JZ", entry="Entries/Index" }) %>">湖北荆州</a></li>
+            </ul>
+            <%--<div class="floatr">
+            </div>--%>
+        </nav>
+    </div>
+    <hr />
+    <div>
+        <asp:ContentPlaceHolder ID="pro_MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
