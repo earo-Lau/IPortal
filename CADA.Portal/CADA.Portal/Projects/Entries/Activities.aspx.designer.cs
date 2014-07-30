@@ -7,27 +7,18 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace CADA.Portal.Sponsorship {
+namespace CADA.Portal.Projects.Entries {
     
     
-    public partial class MyCommunity {
+    public partial class Activities {
         
         /// <summary>
-        /// Pic_Slider 控件。
+        /// lit_Activities 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::CADA.Portal.UCControl.JCarousel_Slider Pic_Slider;
-        
-        /// <summary>
-        /// lt_CommunityText 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lt_CommunityText;
+        protected global::System.Web.UI.WebControls.ListView lit_Activities;
     }
 }

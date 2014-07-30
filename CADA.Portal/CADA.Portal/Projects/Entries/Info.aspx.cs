@@ -32,6 +32,9 @@ namespace CADA.Portal.Projects.Entries
             Pic_Slider.SetDataSource(obj);
             Pic_Slider.DataBind();
 
+            video_Slider.SetDataSource(obj);
+            video_Slider.DataBind();
+
         }
     }
 }

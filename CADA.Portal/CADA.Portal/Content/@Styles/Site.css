@@ -941,3 +941,20 @@ table.Card td{
 {
     text-align:center;
 }
+
+#pro_act #activities_wrap
+{
+    margin-top:20px;
+}
+
+#pro_act .acitivites
+{
+    margin-right:1%;
+    background:#F3F3F3;
+}
+
+#pro_act .acitivites a
+{
+    color:#333;
+    text-decoration:none;
+}

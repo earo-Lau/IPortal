@@ -5,7 +5,7 @@
     <%--<h1>
         我是Community页面</h1>--%>
     <div>
-        <uc:slider ID="Pic_Slider" runat="server" />
+        <Slider:JCarousel ID="Pic_Slider" runat="server" />
         <asp:Literal ID="lt_CommunityText" runat="server"></asp:Literal>
         <p>
             社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍 社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍 社区介绍社区介绍</p>

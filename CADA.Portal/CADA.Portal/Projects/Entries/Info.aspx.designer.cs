@@ -19,7 +19,16 @@ namespace CADA.Portal.Projects.Entries {
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::CADA.Portal.UCControl.Slider Pic_Slider;
+        protected global::CADA.Portal.UCControl.JCarousel_Slider Pic_Slider;
+        
+        /// <summary>
+        /// video_Slider 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::CADA.Portal.UCControl.JCarousel_Slider video_Slider;
         
         /// <summary>
         /// lit_Content_Title 控件。

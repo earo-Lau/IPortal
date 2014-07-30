@@ -76,7 +76,7 @@
                 <li class="active"><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyIntroduce"}) %>">我的介绍</a></li>
                 <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyCommunity"}) %>">我的小区介绍</a></li>
                 <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="GreetingCards"}) %>">我和你的贺卡</a></li>
-                <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyActivities"}) %>">我在活动中收获了</a></li>
+                <li><a href="<%=GetRouteUrl("sponsorship",new {id=ChildId, ajaxAction="MyAcquisition"}) %>">我在活动中收获了</a></li>
             </ul>
             <div class="tab-wrap">
             <div id="tab-page" class="tab-page">
