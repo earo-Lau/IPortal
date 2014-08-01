@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MySite.Master" AutoEventWireup="true" CodeBehind="ActionSite.master.cs" Inherits="CADA.Portal.Actions.ActivitiesSite" %>
+
+<%@ MasterType VirtualPath="~/MySite.master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <link href="<%=ResolveClientUrl("~/Content/@Scripts/lavalamp/styles.css") %>" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="menu_wrap">
+        <nav id="menu" class="lavalamp" style="width: 480px;">
+            <ul>
+                <li class="<%=_GreetingCards %>"><a href="<%=GetRouteUrl("actions", new{ action="GreetingCards" }) %>">制作电子贺卡</a></li>
+                <li class="<%=_Visit %>"><a href="<%=GetRouteUrl("actions", new{ action="Visit" }) %>">申请探访</a></li>
+                <li class="<%=_Volunteer %>"><a href="<%=GetRouteUrl("actions", new{ action="Volunteer" }) %>">成为志愿者</a></li>
+                <li class="<%=_Share %>"><a href="<%=GetRouteUrl("actions", new{ action="Share" }) %>">分享助养旅程</a></li>
+            </ul>
+            <%--<div class="floatr">
+            </div>--%>
+        </nav>
+    </div>
+    <hr />
+    <div class="clearfix">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

@@ -18,9 +18,13 @@ namespace CADA.Portal.Code
 
             routes.MapPageRoute("default", "Index", "~/Default.aspx");
             routes.MapPageRoute("sponsorship", "MySponsorship/{id}/{*ajaxAction}", "~/Sponsorship/Index.aspx", false
-                , new RouteValueDictionary() { { "id", "*" } });
+                , new RouteValueDictionary() { { "id", "*" } }
+                );
             routes.MapPageRoute("project", "MyProjects/{id}/{*entry}", "~/Projects/{entry}.aspx", false
                 , new RouteValueDictionary() { { "id", "" }, { "entry", "Index" } }
+                );
+            routes.MapPageRoute("actions", "Action/{action}/{*id}", "~/Actions/{action}.aspx", false
+                , new RouteValueDictionary() { { "action", "GreetingCards" } }
                 );
             //routes.MapPageRoute("pro_Entry", "MyProjects/Entry/{ajaxAction}/{id}", "~/Projects/Entry/Index.aspx", false
             //    , new RouteValueDictionary() { { "ajaxAction", "Index" } }

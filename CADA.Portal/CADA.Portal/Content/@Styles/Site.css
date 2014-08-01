@@ -958,3 +958,47 @@ table.Card td{
     color:#333;
     text-decoration:none;
 }
+
+/* GreetingCards
+--------------------------------------------------*/
+#Process
+{
+    top:100px;
+}
+
+.process_wrap
+{
+    position:relative;
+}
+
+#Process .modal-header
+{
+    background:#FBBF13;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+}
+
+#Process .modal-title
+{
+    color:#FFF;
+    font:bold 16px/25px "Helvetica Neue","Lucida Grande","Segoe UI",Arial,Helvetica,Verdana,sans-serif;
+}
+
+#Process .modal-body
+{
+    text-align:center;
+}
+
+#Card_Form
+{
+    height:400px;
+}
+
+#Card_Btn .pre
+{
+    float:left;
+}
+#Card_Btn .next
+{
+    float:right;
+}

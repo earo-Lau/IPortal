@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CADA.Portal.Sponsorship
+namespace CADA.Portal.Actions
 {
-    public partial class MyAcquisition : System.Web.UI.Page
+    public partial class GreetingCards : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

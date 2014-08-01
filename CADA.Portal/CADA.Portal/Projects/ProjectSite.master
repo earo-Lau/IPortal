@@ -2,26 +2,7 @@
 
 <%@ MasterType VirtualPath="~/MySite.master" %>
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="HeadContent">
-    <%--<script src="<%=ResolveClientUrl("~/Content/@Scripts/lavalamp/lavalamp.js") %>" type="text/javascript"></script>--%>
     <link href="<%=ResolveClientUrl("~/Content/@Scripts/lavalamp/styles.css") %>" rel="stylesheet" type="text/css" />
-    <%--<style>
-        #menu
-        {
-            width: 430px;
-        }
-        #menu li.second:hover ~ .current
-        {
-            left: 145px;
-        }
-        #menu li.third:hover ~ .current
-        {
-            left: 253px;
-        }
-        #menu li.fourth:hover ~ .current
-        {
-            left: 356px;
-        }
-    </style>--%>
     <asp:ContentPlaceHolder ID="pro_HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </asp:Content>
