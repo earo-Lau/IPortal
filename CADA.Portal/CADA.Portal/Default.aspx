@@ -4,97 +4,105 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <div class="two_third" style="background: #FFF5DC;">
-        <div class="widget">
-            <div class="title welcomeTitle">
-                Welcome back to know their world</div>
-            <div id="myChild">
-                <div>
-                    <div class="title_Left">
-                        我助养的儿童
+    <div class="index_wrap clearfix">
+        <div class="row-fluid" style="margin-bottom:20px;">
+            <div class="span8" style="background: #FFF5DC;">
+                <div class="block">
+                    <div class="title head">
+                        <h3>
+                            Welcome back to know their world
+                        </h3>
                     </div>
-                    <div class="title_Right">
-                        查看所有已助养的儿童</div>
+                    <div id="myChild" class="data">
+                        <div class="title_Left">
+                            我助养的儿童
+                        </div>
+                        <div class="title_Right">
+                            查看所有已助养的儿童</div>
+                        <div>
+                            <asp:ListView runat="server" ID="lv_children">
+                                <ItemTemplate>
+                                    <img src="~/Content/@images/test.jpg" />
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <asp:ListView runat="server" ID="lv_children">
-                        <ItemTemplate>
-                            <img src="~/Content/@images/test.jpg" />
-                        </ItemTemplate>
-                    </asp:ListView>
+            </div>
+            <div id="Inbox" class="span4">
+                <div class="block">
+                    <div class="title head">
+                        <h2 class="cn">收信箱</h2>
+                        <br />
+                        <h2 class="en">Inbox</h2>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <asp:ListView ID="lv_Inbox" runat="server">
+                                <ItemTemplate>
+                                    <li>
+                                        <div class="new_info">
+                                            <a>
+                                                <%#Eval("Info") %></a> <span class="date">2014-07-21</span>
+                                            <div class="clear">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="Inbox" class="one_third_last">
-        <div class="widget">
-            <div class="title">
-                <span class="cn">收信箱</span>
-                <br />
-                <span class="en">Inbox</span>
+        <div class="row-fluid">
+            <div id="Events" class="span4">
+                <div class="block">
+                    <div class="head title">
+                        <h2 class="cn">最新活动信息</h2>
+                        <br />
+                        <h2 class="en">Latest Event</h2>
+                    </div>
+                    <div class="info data">
+                        <img src="#" />
+                        <h3>
+                            活动标题</h3>
+                        <p>
+                            活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <asp:ListView ID="lv_Inbox" runat="server">
-                    <ItemTemplate>
-                        <li>
-                            <div class="new_info">
-                                <a>
-                                    <%#Eval("Info") %></a> <span class="date">2014-07-21</span>
-                                <div class="clear_placeholder"></div>
-                            </div>
-                        </li>
-                    </ItemTemplate>
-                </asp:ListView>
-            </ul>
-        </div>
-    </div>
-    <div class="clear clearfix">
-    </div>
-    <div id="Events" class="one_third">
-        <div class="widget">
-            <div class="title">
-                <span class="cn">最新活动信息</span>
-                <br />
-                <span class="en">Latest Event</span>
+            <div id="Project" class="span4">
+                <div class="block">
+                    <div class="head title">
+                        <h2 class="cn">最新项目进展</h2>
+                        <br />
+                        <h2 class="en">Recent Progress of the Project</h2>
+                    </div>
+                    <div class="info data">
+                        <img src="#" />
+                        <h3>
+                            项目标题</h3>
+                        <p>
+                            项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容</p>
+                    </div>
+                </div>
             </div>
-            <div class="info">
-                <img src="#" />
-                <h3>
-                    活动标题</h3>
-                <p>
-                    活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
-            </div>
-        </div>
-    </div>
-    <div id="Project" class="one_third">
-        <div class="widget">
-            <div class="title">
-                <span class="cn">最新项目进展</span>
-                <br />
-                <span class="en">Recent Progress of the Project</span>
-            </div>
-            <div class="info">
-                <img src="#" />
-                <h3>
-                    项目标题</h3>
-                <p>
-                    项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容</p>
-            </div>
-        </div>
-    </div>
-    <div id="Social" class="one_third_last">
-        <div class="widget">
-            <div class="title">
-                <span class="cn">社交媒体分享</span>
-                <br />
-                <span class="en">Share in Social Media</span>
-            </div>
-            <div class="info">
-                <img src="#" />
-                <h3>
-                    活动标题</h3>
-                <p>
-                    活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
+            <div id="Social" class="span4">
+                <div class="block">
+                    <div class="head title">
+                        <h2 class="cn">社交媒体分享</h2>
+                        <br />
+                        <h2 class="en">Share in Social Media</h2>
+                    </div>
+                    <div class="info data">
+                        <img src="#" />
+                        <h3>
+                            活动标题</h3>
+                        <p>
+                            活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

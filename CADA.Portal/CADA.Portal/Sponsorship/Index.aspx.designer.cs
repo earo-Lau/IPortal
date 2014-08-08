@@ -40,6 +40,60 @@ namespace CADA.Portal.Sponsorship {
         protected global::System.Web.UI.WebControls.ListView lv_children;
         
         /// <summary>
+        /// lab_Name 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lab_Name;
+        
+        /// <summary>
+        /// lab_ID 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lab_ID;
+        
+        /// <summary>
+        /// lab_sponsor_Date 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lab_sponsor_Date;
+        
+        /// <summary>
+        /// lab_descript 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lab_descript;
+        
+        /// <summary>
+        /// lv_donors 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lv_donors;
+        
+        /// <summary>
+        /// link_ToAnother 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton link_ToAnother;
+        
+        /// <summary>
         /// btn_Child_Pic 控件。
         /// </summary>
         /// <remarks>
@@ -85,22 +139,13 @@ namespace CADA.Portal.Sponsorship {
         protected global::System.Web.UI.WebControls.Button btn_Visit_Me;
         
         /// <summary>
-        /// btn_Dornate 控件。
+        /// Children1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Dornate;
-        
-        /// <summary>
-        /// lit_donors 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lit_donors;
+        protected global::CADA.Portal.UCControl.ASide_Children Children1;
         
         /// <summary>
         /// Master 属性。

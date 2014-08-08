@@ -5,9 +5,25 @@
     <%--<h1>
         我是Community页面</h1>--%>
     <div>
-        <Slider:JCarousel ID="Pic_Slider" runat="server" />
-        <asp:Literal ID="lt_CommunityText" runat="server"></asp:Literal>
-        <p>
-            社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍 社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍社区介绍 社区介绍社区介绍</p>
+        <div class="row-fluid">
+            <div class="block">
+                <div class="head">
+                    <h4>
+                        小区相片</h4>
+                </div>
+                <div class="data">
+                    <Slider:JCarousel ID="Pic_Slider" runat="server" />
+            </div>
+            <div class="block">
+                <div class="head">
+                    <h4>
+                        小区视频</h4>
+                </div>
+                <div class="data">
+                    <Slider:JCarousel_Video ID="Video_Slider" runat="server" />
+                </div>
+            </div>
+            
+        </div>
     </div>
 </body>

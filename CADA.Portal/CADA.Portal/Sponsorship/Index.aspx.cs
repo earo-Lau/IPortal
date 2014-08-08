@@ -23,11 +23,14 @@ namespace CADA.Portal.Sponsorship
 
         protected void Init()
         {
-            object[] obj = new object[] { 1, 2, 3, 4, 5 };
-            lv_children.DataSource = obj;
+            var children = new object[] { 1, 2, 3, 4, 5 };
+            lv_children.DataSource = children;
             lv_children.DataBind();
 
-            lit_donors.Text = "Lily WU; Billy; David Lam;";
+
+            var donor = new object[] { new { Donor_Name = "李志国" }, new { Donor_Name = "另一个李志国" } };
+            lv_donors.DataSource = donor;
+            lv_donors.DataBind();
 
         }
     }

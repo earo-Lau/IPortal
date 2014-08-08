@@ -20,11 +20,11 @@ namespace CADA.Portal.Sponsorship
         private void Init()
         {
             object[] obj_left = new object[] {
-                new {pic_Path="xxx",Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"}
-                ,new {pic_Path="xxx",Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字"}
+                new {pic_Path="xxx",Card_Content="2014年04月19日"}
+                ,new {pic_Path="xxx",Card_Content="2014年04月19日"}
             };
             object[] obj_right = new object[]{
-                new {pic_Path="xxx", Card_Content="内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字" }
+                new {pic_Path="xxx", Card_Content="2014年04月19日" }
             };
 
             lv_LeftCard.DataSource = obj_left;

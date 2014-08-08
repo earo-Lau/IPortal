@@ -989,9 +989,22 @@ table.Card td{
     text-align:center;
 }
 
+
+/* Greeting Cards Form
+--------------------------------------------------*/
+#Card_Form_wrap
+{
+    width:970px;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+
 #Card_Form
 {
-    height:400px;
+    height:480px;
+    width:4850px;
+    position:relative;
 }
 
 #Card_Btn .pre
@@ -1001,4 +1014,132 @@ table.Card td{
 #Card_Btn .next
 {
     float:right;
+}
+
+#Card_Form .sub_form
+{
+    height:100%;
+    width:970px;
+    float:left;
+}
+
+#child
+{
+    background: #9EFEFF;
+}
+
+#picture
+{
+    background: #70f3ff;
+}
+
+#modal
+{
+    background: #30dff3;
+}
+
+#greeting
+{
+    background: #44CEF6;
+}
+
+#preview
+{
+    background: #177CB0;
+}
+
+#picture .picture_wrap
+{
+    width:400px;
+    margin:0 auto;
+}
+
+#modal .modal_wrap
+{
+    width:760px;
+    margin:0 auto;
+}
+
+#modal .modal_block
+{
+    height:220px;
+}
+
+#greeting .greeting_wrap
+{
+    width:480px;
+    margin:0 auto;
+}
+
+#greeting .card
+{
+    width:420px;
+    height:300px;
+    background:#eedeb0;
+    margin:0 auto;
+}
+
+#greeting .greeting_form
+{
+ width:480px;
+ margin:0 auto;   
+}
+
+.greeting_form .form-control
+{
+    padding:0px 5px;
+    display:inline-block;
+}
+
+.greeting_form .one_half.form-block,
+.greeting_form .one_half_last.form-block
+{
+    margin-bottom:0;
+}
+.greeting_form .greeting_text
+{
+    
+}
+
+/* Visit
+------------------------------------------------------*/
+#visit
+{
+}
+
+#visit fieldset
+{
+    border:1px dashed #D9D9D9;
+}
+
+.form-group .input-wrap
+{
+    float:left;
+}
+
+.form-group .one_half,.form-group .one_half_last
+{
+    margin-bottom:0;
+}
+
+#visitor_table .form-control.input-sm
+{
+    width:86%;
+}
+#visitor_table th
+{
+    text-align:center;
+}
+
+.hightlight
+{
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #F7F7F9;
+}
+
+/* Share
+----------------------------------------------------*/
+#Share_Progress
+{
 }

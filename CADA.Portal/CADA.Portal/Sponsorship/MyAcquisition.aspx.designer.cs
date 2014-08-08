@@ -13,6 +13,33 @@ namespace CADA.Portal.Sponsorship {
     public partial class MyAcquisition {
         
         /// <summary>
+        /// img_Child 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img_Child;
+        
+        /// <summary>
+        /// lit_Child_Story 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lit_Child_Story;
+        
+        /// <summary>
+        /// lit_Reports 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lit_Reports;
+        
+        /// <summary>
         /// lit_Content 控件。
         /// </summary>
         /// <remarks>

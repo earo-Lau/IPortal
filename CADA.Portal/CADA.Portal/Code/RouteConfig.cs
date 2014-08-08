@@ -30,6 +30,7 @@ namespace CADA.Portal.Code
             //    , new RouteValueDictionary() { { "ajaxAction", "Index" } }
             //    );
 
+            routes.Add("upload", new Route("Uploader/{*id}", new Upload.Uploader()));
         }
     }
 }

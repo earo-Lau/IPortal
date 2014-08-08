@@ -12,6 +12,18 @@ namespace CADA.Portal.Actions
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Master._GreetingCards = "active";
+            if (!IsPostBack)
+            {
+                Init();
+            }
+        }
+
+        protected void Init()
+        {
+            object[] obj = new object[] { 1, 2, 3, 4, 5 };
+            lv_children.DataSource = obj;
+            lv_children.DataBind();
         }
     }
 }
