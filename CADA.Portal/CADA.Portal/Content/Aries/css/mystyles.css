@@ -499,6 +499,11 @@ footer
 {
 }
 
+.project_wrap
+{
+    
+}
+
 .pro_target
 {
     background:#F3F3F3;
@@ -512,6 +517,11 @@ footer
     text-align:center;
 }
 
+#pro_introduce .data
+{
+    background:#F2F2F2;
+}
+
 #pro_act #activities_wrap
 {
     margin-top:20px;
@@ -519,7 +529,7 @@ footer
 
 #pro_act .acitivites
 {
-    margin-right:1%;
+    margin-bottom:10px;
     background:#F3F3F3;
 }
 
@@ -533,7 +543,6 @@ footer
 --------------------------------------------------*/
 #Process
 {
-    top:100px;
 }
 
 .process_wrap
@@ -572,26 +581,9 @@ footer
 
 #Card_Form
 {
-    height:480px;
-    width:4850px;
     position:relative;
 }
 
-#Card_Btn .pre
-{
-    float:left;
-}
-#Card_Btn .next
-{
-    float:right;
-}
-
-#Card_Form .sub_form
-{
-    height:100%;
-    width:970px;
-    float:left;
-}
 
 #child
 {
@@ -633,6 +625,7 @@ footer
 #modal .modal_block
 {
     height:220px;
+    margin-bottom:10px;
 }
 
 #greeting .greeting_wrap
@@ -643,7 +636,6 @@ footer
 
 #greeting .card
 {
-    width:420px;
     height:300px;
     background:#eedeb0;
     margin:0 auto;
@@ -655,41 +647,26 @@ footer
  margin:0 auto;   
 }
 
-.greeting_form .form-control
-{
-    padding:0px 5px;
-    display:inline-block;
-}
+/* Volunteer
+------------------------------------------------------*/
 
-.greeting_form .one_half.form-block,
-.greeting_form .one_half_last.form-block
-{
-    margin-bottom:0;
-}
-.greeting_form .greeting_text
-{
-    
-}
 
 /* Visit
 ------------------------------------------------------*/
-#visit
-{
-}
-
-#visit fieldset
+#visit fieldset,
+#volunteer fieldset
 {
     border:1px dashed #D9D9D9;
+}
+
+#apply fieldset
+{
+    border-bottom:0 none;
 }
 
 .form-group .input-wrap
 {
     float:left;
-}
-
-.form-group .one_half,.form-group .one_half_last
-{
-    margin-bottom:0;
 }
 
 #visitor_table .form-control.input-sm
@@ -707,9 +684,22 @@ footer
     margin-bottom: 14px;
     background-color: #F7F7F9;
 }
+#apply fieldset.hightlight
+{
+    border-bottom:1px dashed #D9D9D9;
+}
 
 /* Share
 ----------------------------------------------------*/
 #Share_Progress
 {
+}
+
+.share_link
+{
+    height:280px;
+    margin:10px;
+    background:#F7F7F9;
+    text-align:center;
+    border-radius:6px;
 }

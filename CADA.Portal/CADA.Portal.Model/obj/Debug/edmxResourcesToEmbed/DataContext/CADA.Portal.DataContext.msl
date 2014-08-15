@@ -31,23 +31,225 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="YearReportMain">
-      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportMain">
-        <MappingFragment StoreEntitySet="YearReportMain">
+    <EntitySetMapping Name="Donor_Card">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Donor_Card">
+        <MappingFragment StoreEntitySet="Donor_Card">
+          <ScalarProperty Name="Submit_day" ColumnName="Submit_day" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Message_From" ColumnName="Message_From" />
+          <ScalarProperty Name="Message_To" ColumnName="Message_To" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="DonorPhoto" ColumnName="DonorPhoto" />
+          <ScalarProperty Name="Child_ID" ColumnName="Child_ID" />
+          <ScalarProperty Name="Donor_ID" ColumnName="Donor_ID" />
           <ScalarProperty Name="SID" ColumnName="SID" />
-          <ScalarProperty Name="ReportYear" ColumnName="ReportYear" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Remark" ColumnName="Remark" />
-          <ScalarProperty Name="Video" ColumnName="Video" />
-          <ScalarProperty Name="VideoRemark" ColumnName="VideoRemark" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="YearReportPhoto">
-      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReportPhoto">
-        <MappingFragment StoreEntitySet="YearReportPhoto">
+    <EntitySetMapping Name="Project_Introduce">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Project_Introduce">
+        <MappingFragment StoreEntitySet="Project_Introduce">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
           <ScalarProperty Name="SID" ColumnName="SID" />
-          <ScalarProperty Name="YearReportMainSID" ColumnName="YearReportMainSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project_Introduce_Detail">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Project_Introduce_Detail">
+        <MappingFragment StoreEntitySet="Project_Introduce_Detail">
+          <ScalarProperty Name="Photo_Link" ColumnName="Photo_Link" />
+          <ScalarProperty Name="Photo_Message" ColumnName="Photo_Message" />
+          <ScalarProperty Name="Photo_Title" ColumnName="Photo_Title" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Project_Introduce_SID" ColumnName="Project_Introduce_SID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project_Introduce_Detail_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Project_Introduce_Detail_Log">
+        <MappingFragment StoreEntitySet="Project_Introduce_Detail_Log">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="Photo_Link" ColumnName="Photo_Link" />
+          <ScalarProperty Name="Photo_Message" ColumnName="Photo_Message" />
+          <ScalarProperty Name="Photo_Title" ColumnName="Photo_Title" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Project_Introduce_SID" ColumnName="Project_Introduce_SID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project_Introduce_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Project_Introduce_Log">
+        <MappingFragment StoreEntitySet="Project_Introduce_Log">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="Video_by" ColumnName="Video_by" />
+          <ScalarProperty Name="Video_Message" ColumnName="Video_Message" />
+          <ScalarProperty Name="Video_Day" ColumnName="Video_Day" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Photo_by" ColumnName="Photo_by" />
+          <ScalarProperty Name="Photo_Message" ColumnName="Photo_Message" />
+          <ScalarProperty Name="Photo_Day" ColumnName="Photo_Day" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Region_Log">
+        <MappingFragment StoreEntitySet="Region_Log">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="Video_by" ColumnName="Video_by" />
+          <ScalarProperty Name="Video_Message" ColumnName="Video_Message" />
+          <ScalarProperty Name="Video_Day" ColumnName="Video_Day" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Photo_by" ColumnName="Photo_by" />
+          <ScalarProperty Name="Photo_Message" ColumnName="Photo_Message" />
+          <ScalarProperty Name="Photo_Day" ColumnName="Photo_Day" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visit_Form">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Visit_Form">
+        <MappingFragment StoreEntitySet="Visit_Form">
+          <ScalarProperty Name="Person_total" ColumnName="Person_total" />
+          <ScalarProperty Name="Exigent_Person_Contact" ColumnName="Exigent_Person_Contact" />
+          <ScalarProperty Name="Exigent_Person_Relation" ColumnName="Exigent_Person_Relation" />
+          <ScalarProperty Name="Exigent_Person" ColumnName="Exigent_Person" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="ID_Card" ColumnName="ID_Card" />
+          <ScalarProperty Name="Name_En" ColumnName="Name_En" />
+          <ScalarProperty Name="Name_Chi" ColumnName="Name_Chi" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visit_Form_Detail">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Visit_Form_Detail">
+        <MappingFragment StoreEntitySet="Visit_Form_Detail">
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="Birthday_Year" ColumnName="Birthday_Year" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Visit_SID" ColumnName="Visit_SID" />
+          <ScalarProperty Name="Detail_SID" ColumnName="Detail_SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Volunteer_Form">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.Volunteer_Form">
+        <MappingFragment StoreEntitySet="Volunteer_Form">
+          <ScalarProperty Name="Submit_Day" ColumnName="Submit_Day" />
+          <ScalarProperty Name="Content_Support" ColumnName="Content_Support" />
+          <ScalarProperty Name="Content_Interest" ColumnName="Content_Interest" />
+          <ScalarProperty Name="Exigent_Person_Contact" ColumnName="Exigent_Person_Contact" />
+          <ScalarProperty Name="Exigent_Person_Relation" ColumnName="Exigent_Person_Relation" />
+          <ScalarProperty Name="Exigent_Person" ColumnName="Exigent_Person" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="ID_Card" ColumnName="ID_Card" />
+          <ScalarProperty Name="Name_En" ColumnName="Name_En" />
+          <ScalarProperty Name="Name_Chi" ColumnName="Name_Chi" />
+          <ScalarProperty Name="Project_SID" ColumnName="Project_SID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReport">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReport">
+        <MappingFragment StoreEntitySet="YearReport">
+          <ScalarProperty Name="VideoRemark" ColumnName="VideoRemark" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Child_Message" ColumnName="Child_Message" />
+          <ScalarProperty Name="Child_Photo" ColumnName="Child_Photo" />
+          <ScalarProperty Name="ReportYear" ColumnName="ReportYear" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReport_Detail">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReport_Detail">
+        <MappingFragment StoreEntitySet="YearReport_Detail">
+          <ScalarProperty Name="Orderby" ColumnName="Orderby" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="MessageTitle" ColumnName="MessageTitle" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
+          <ScalarProperty Name="YearReport_SID" ColumnName="YearReport_SID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReport_Detail_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReport_Detail_Log">
+        <MappingFragment StoreEntitySet="YearReport_Detail_Log">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="Orderby" ColumnName="Orderby" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="MessageTitle" ColumnName="MessageTitle" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
+          <ScalarProperty Name="YearReport_SID" ColumnName="YearReport_SID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearReport_Log">
+      <EntityTypeMapping TypeName="CADA.Portal.Model.YearReport_Log">
+        <MappingFragment StoreEntitySet="YearReport_Log">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CreateName" ColumnName="CreateName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="VideoRemark" ColumnName="VideoRemark" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+          <ScalarProperty Name="Child_Message" ColumnName="Child_Message" />
+          <ScalarProperty Name="Child_Photo" ColumnName="Child_Photo" />
+          <ScalarProperty Name="ReportYear" ColumnName="ReportYear" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

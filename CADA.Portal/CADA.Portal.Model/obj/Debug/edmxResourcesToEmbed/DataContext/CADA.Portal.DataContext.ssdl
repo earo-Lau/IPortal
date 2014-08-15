@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="CADA.Portal.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="CADAPortalModelStoreContainer">
+    <EntitySet Name="Donor_Card" EntityType="CADA.Portal.Model.Store.Donor_Card" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="HomePage_Message" EntityType="CADA.Portal.Model.Store.HomePage_Message" store:Type="Tables" store:Schema="dbo" store:Name="HomePage_Message">
       <DefiningQuery>SELECT 
       [HomePage_Message].[SID] AS [SID], 
@@ -27,9 +28,103 @@
       [HomePage_Message_Log].[Action] AS [Action]
       FROM [dbo].[HomePage_Message_Log] AS [HomePage_Message_Log]</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="YearReportMain" EntityType="CADA.Portal.Model.Store.YearReportMain" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="YearReportPhoto" EntityType="CADA.Portal.Model.Store.YearReportPhoto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project_Introduce" EntityType="CADA.Portal.Model.Store.Project_Introduce" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project_Introduce_Detail" EntityType="CADA.Portal.Model.Store.Project_Introduce_Detail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project_Introduce_Detail_Log" EntityType="CADA.Portal.Model.Store.Project_Introduce_Detail_Log" store:Type="Tables" store:Schema="dbo" store:Name="Project_Introduce_Detail_Log">
+      <DefiningQuery>SELECT 
+      [Project_Introduce_Detail_Log].[SID] AS [SID], 
+      [Project_Introduce_Detail_Log].[Project_Introduce_SID] AS [Project_Introduce_SID], 
+      [Project_Introduce_Detail_Log].[Photo] AS [Photo], 
+      [Project_Introduce_Detail_Log].[Photo_Title] AS [Photo_Title], 
+      [Project_Introduce_Detail_Log].[Photo_Message] AS [Photo_Message], 
+      [Project_Introduce_Detail_Log].[Photo_Link] AS [Photo_Link], 
+      [Project_Introduce_Detail_Log].[CreateDay] AS [CreateDay], 
+      [Project_Introduce_Detail_Log].[CreateBy] AS [CreateBy], 
+      [Project_Introduce_Detail_Log].[CreateName] AS [CreateName], 
+      [Project_Introduce_Detail_Log].[Action] AS [Action]
+      FROM [dbo].[Project_Introduce_Detail_Log] AS [Project_Introduce_Detail_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Project_Introduce_Log" EntityType="CADA.Portal.Model.Store.Project_Introduce_Log" store:Type="Tables" store:Schema="dbo" store:Name="Project_Introduce_Log">
+      <DefiningQuery>SELECT 
+      [Project_Introduce_Log].[SID] AS [SID], 
+      [Project_Introduce_Log].[Project_ID] AS [Project_ID], 
+      [Project_Introduce_Log].[Video] AS [Video], 
+      [Project_Introduce_Log].[Message] AS [Message], 
+      [Project_Introduce_Log].[CreateDay] AS [CreateDay], 
+      [Project_Introduce_Log].[CreateBy] AS [CreateBy], 
+      [Project_Introduce_Log].[CreateName] AS [CreateName], 
+      [Project_Introduce_Log].[Action] AS [Action]
+      FROM [dbo].[Project_Introduce_Log] AS [Project_Introduce_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Region" EntityType="CADA.Portal.Model.Store.Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Region_Log" EntityType="CADA.Portal.Model.Store.Region_Log" store:Type="Tables" store:Schema="dbo" store:Name="Region_Log">
+      <DefiningQuery>SELECT 
+      [Region_Log].[SID] AS [SID], 
+      [Region_Log].[Project_ID] AS [Project_ID], 
+      [Region_Log].[Photo] AS [Photo], 
+      [Region_Log].[Photo_Day] AS [Photo_Day], 
+      [Region_Log].[Photo_Message] AS [Photo_Message], 
+      [Region_Log].[Photo_by] AS [Photo_by], 
+      [Region_Log].[Video] AS [Video], 
+      [Region_Log].[Video_Day] AS [Video_Day], 
+      [Region_Log].[Video_Message] AS [Video_Message], 
+      [Region_Log].[Video_by] AS [Video_by], 
+      [Region_Log].[CreateDay] AS [CreateDay], 
+      [Region_Log].[CreateBy] AS [CreateBy], 
+      [Region_Log].[CreateName] AS [CreateName], 
+      [Region_Log].[Action] AS [Action]
+      FROM [dbo].[Region_Log] AS [Region_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Visit_Form" EntityType="CADA.Portal.Model.Store.Visit_Form" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Visit_Form_Detail" EntityType="CADA.Portal.Model.Store.Visit_Form_Detail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Volunteer_Form" EntityType="CADA.Portal.Model.Store.Volunteer_Form" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="YearReport" EntityType="CADA.Portal.Model.Store.YearReport" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="YearReport_Detail" EntityType="CADA.Portal.Model.Store.YearReport_Detail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="YearReport_Detail_Log" EntityType="CADA.Portal.Model.Store.YearReport_Detail_Log" store:Type="Tables" store:Schema="dbo" store:Name="YearReport_Detail_Log">
+      <DefiningQuery>SELECT 
+      [YearReport_Detail_Log].[SID] AS [SID], 
+      [YearReport_Detail_Log].[YearReport_SID] AS [YearReport_SID], 
+      [YearReport_Detail_Log].[Group_ID] AS [Group_ID], 
+      [YearReport_Detail_Log].[Photo] AS [Photo], 
+      [YearReport_Detail_Log].[MessageTitle] AS [MessageTitle], 
+      [YearReport_Detail_Log].[Message] AS [Message], 
+      [YearReport_Detail_Log].[Orderby] AS [Orderby], 
+      [YearReport_Detail_Log].[CreateDay] AS [CreateDay], 
+      [YearReport_Detail_Log].[CreateBy] AS [CreateBy], 
+      [YearReport_Detail_Log].[CreateName] AS [CreateName], 
+      [YearReport_Detail_Log].[Action] AS [Action]
+      FROM [dbo].[YearReport_Detail_Log] AS [YearReport_Detail_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="YearReport_Log" EntityType="CADA.Portal.Model.Store.YearReport_Log" store:Type="Tables" store:Schema="dbo" store:Name="YearReport_Log">
+      <DefiningQuery>SELECT 
+      [YearReport_Log].[SID] AS [SID], 
+      [YearReport_Log].[Project_ID] AS [Project_ID], 
+      [YearReport_Log].[ReportYear] AS [ReportYear], 
+      [YearReport_Log].[Child_Photo] AS [Child_Photo], 
+      [YearReport_Log].[Child_Message] AS [Child_Message], 
+      [YearReport_Log].[Video] AS [Video], 
+      [YearReport_Log].[VideoRemark] AS [VideoRemark], 
+      [YearReport_Log].[CreateDay] AS [CreateDay], 
+      [YearReport_Log].[CreateBy] AS [CreateBy], 
+      [YearReport_Log].[CreateName] AS [CreateName], 
+      [YearReport_Log].[Action] AS [Action]
+      FROM [dbo].[YearReport_Log] AS [YearReport_Log]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
+  <EntityType Name="Donor_Card">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Donor_ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Child_ID" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="DonorPhoto" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Template" Type="varchar" MaxLength="100" />
+    <Property Name="Message_To" Type="nvarchar" MaxLength="50" />
+    <Property Name="Message_From" Type="nvarchar" MaxLength="50" />
+    <Property Name="Message" Type="nvarchar" MaxLength="500" />
+    <Property Name="Submit_day" Type="datetime" />
+  </EntityType>
   <!--生成过程中发现错误:
       警告 6002: 表/视图“CADA_Portal.dbo.HomePage_Message”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
       -->
@@ -64,22 +159,225 @@
     <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
     <Property Name="Action" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="YearReportMain">
+  <EntityType Name="Project_Introduce">
     <Key>
       <PropertyRef Name="SID" />
     </Key>
     <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Video" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Project_Introduce_Detail">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_Introduce_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Photo_Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Photo_Message" Type="nchar" MaxLength="100" />
+    <Property Name="Photo_Link" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.Project_Introduce_Detail_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Project_Introduce_Detail_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="Project_Introduce_SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_Introduce_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Photo_Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Photo_Message" Type="nchar" MaxLength="100" />
+    <Property Name="Photo_Link" Type="varchar" MaxLength="1000" />
+    <Property Name="CreateDay" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.Project_Introduce_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Project_Introduce_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="Project_ID" />
+      <PropertyRef Name="Video" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Video" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateDay" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" MaxLength="36" />
+    <Property Name="Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Photo_Day" Type="datetime" />
+    <Property Name="Photo_Message" Type="nvarchar" MaxLength="100" />
+    <Property Name="Photo_by" Type="varchar" MaxLength="36" />
+    <Property Name="Video" Type="varchar" MaxLength="100" />
+    <Property Name="Video_Day" Type="datetime" />
+    <Property Name="Video_Message" Type="nvarchar" MaxLength="100" />
+    <Property Name="Video_by" Type="varchar" MaxLength="36" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.Region_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Region_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" MaxLength="36" />
+    <Property Name="Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Photo_Day" Type="datetime" />
+    <Property Name="Photo_Message" Type="nvarchar" MaxLength="100" />
+    <Property Name="Photo_by" Type="varchar" MaxLength="36" />
+    <Property Name="Video" Type="varchar" MaxLength="100" />
+    <Property Name="Video_Day" Type="datetime" />
+    <Property Name="Video_Message" Type="nvarchar" MaxLength="100" />
+    <Property Name="Video_by" Type="varchar" MaxLength="36" />
+    <Property Name="CreateDay" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Visit_Form">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Name_Chi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name_En" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_Card" Type="varchar" MaxLength="30" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="Sex" Type="varchar" MaxLength="36" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="varchar" MaxLength="36" />
+    <Property Name="City" Type="varchar" MaxLength="36" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Exigent_Person" Type="nvarchar" MaxLength="50" />
+    <Property Name="Exigent_Person_Relation" Type="nvarchar" MaxLength="50" />
+    <Property Name="Exigent_Person_Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Person_total" Type="int" />
+  </EntityType>
+  <EntityType Name="Visit_Form_Detail">
+    <Key>
+      <PropertyRef Name="Detail_SID" />
+    </Key>
+    <Property Name="Detail_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Visit_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="varchar" MaxLength="36" />
+    <Property Name="Birthday_Year" Type="varchar" MaxLength="10" />
+    <Property Name="Relation" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Volunteer_Form">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name_Chi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name_En" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_Card" Type="varchar" MaxLength="30" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="Sex" Type="varchar" MaxLength="36" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="varchar" MaxLength="36" />
+    <Property Name="City" Type="varchar" MaxLength="36" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Exigent_Person" Type="nvarchar" MaxLength="50" />
+    <Property Name="Exigent_Person_Relation" Type="nvarchar" MaxLength="50" />
+    <Property Name="Exigent_Person_Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Content_Interest" Type="nvarchar" MaxLength="500" />
+    <Property Name="Content_Support" Type="nvarchar" MaxLength="500" />
+    <Property Name="Submit_Day" Type="datetime" />
+  </EntityType>
+  <EntityType Name="YearReport">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" MaxLength="36" />
     <Property Name="ReportYear" Type="decimal" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
-    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="Child_Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Child_Message" Type="nvarchar(max)" />
     <Property Name="Video" Type="nvarchar" Nullable="false" MaxLength="100" />
     <Property Name="VideoRemark" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
-  <EntityType Name="YearReportPhoto">
+  <EntityType Name="YearReport_Detail">
     <Key>
       <PropertyRef Name="SID" />
     </Key>
     <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
-    <Property Name="YearReportMainSID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="YearReport_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Group_ID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="MessageTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Orderby" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.YearReport_Detail_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="YearReport_Detail_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="YearReport_SID" />
+      <PropertyRef Name="Group_ID" />
+      <PropertyRef Name="Photo" />
+      <PropertyRef Name="MessageTitle" />
+      <PropertyRef Name="Message" />
+      <PropertyRef Name="Orderby" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="YearReport_SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Group_ID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Photo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="MessageTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Orderby" Type="int" Nullable="false" />
+    <Property Name="CreateDay" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“CADA_Portal.dbo.YearReport_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="YearReport_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="ReportYear" />
+      <PropertyRef Name="Video" />
+      <PropertyRef Name="VideoRemark" />
+    </Key>
+    <Property Name="SID" Type="varchar" Nullable="false" MaxLength="36" />
+    <Property Name="Project_ID" Type="varchar" MaxLength="36" />
+    <Property Name="ReportYear" Type="decimal" Nullable="false" />
+    <Property Name="Child_Photo" Type="varchar" MaxLength="100" />
+    <Property Name="Child_Message" Type="nvarchar(max)" />
+    <Property Name="Video" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="VideoRemark" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreateDay" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="10" />
+    <Property Name="CreateName" Type="nvarchar" MaxLength="36" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
   </EntityType>
 </Schema>

@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal", "CADA.Portal\CADA.Portal.csproj", "{8942A35A-B787-4C7F-83FE-01B148906E02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal.Model", "CADA.Portal.Model\CADA.Portal.Model.csproj", "{DC01D0BD-564E-428B-BED5-966E43552E71}"
@@ -10,6 +8,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal.DAL", "CADA.Portal.DAL\CADA.Portal.DAL.csproj", "{CFE97B44-2C7B-44EC-8002-6239988DF34D}"
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srv281-1vlsky1:8080/tfs/wvchi
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CADA.Portal.DAL\\CADA.Portal.DAL.csproj
+		SccProjectName1 = CADA.Portal.DAL
+		SccLocalPath1 = CADA.Portal.DAL
+		SccProjectUniqueName2 = CADA.Portal.Model\\CADA.Portal.Model.csproj
+		SccProjectName2 = CADA.Portal.Model
+		SccLocalPath2 = CADA.Portal.Model
+		SccProjectUniqueName3 = CADA.Portal\\CADA.Portal.csproj
+		SccProjectName3 = CADA.Portal
+		SccLocalPath3 = CADA.Portal
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

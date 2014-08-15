@@ -531,9 +531,9 @@ div.tagsinput div input{line-height: 20px; height: 20px; font-size: 11px; margin
     /* popover */    
     
     /* Modal */
-    .modal{-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; border-color: #CCC;}
-        .modal-header{box-shadow: 0 1px 0 #fff; background: #FFF; 
-                      -webkit-box-shadow: inset 0 1px white; -moz-box-shadow: inset 0 1px #fff; box-shadow: inset 0 1px white; 
+    .modal{-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-color: #CCC;}
+        .modal-header{ background: #FFF; 
+                        
                       -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;padding: 10px 10px 7px 10px;}
             .modal-header h3{color: #333; font-size: 14px; font-weight: normal; text-shadow: 0 1px white; line-height: 20px;}
     .modal-backdrop, .modal-backdrop.fade.in{opacity: 0.25; filter: alpha(opacity=25); background: #333;}

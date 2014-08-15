@@ -3,8 +3,20 @@
   <EntityContainer Name="CADA_PortalEntities" annotation:LazyLoadingEnabled="true" a:TypeAccess="Internal" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration">
     <EntitySet Name="HomePage_Message" EntityType="CADA.Portal.Model.HomePage_Message" />
     <EntitySet Name="HomePage_Message_Log" EntityType="CADA.Portal.Model.HomePage_Message_Log" />
-    <EntitySet Name="YearReportMain" EntityType="CADA.Portal.Model.YearReportMain" />
-    <EntitySet Name="YearReportPhoto" EntityType="CADA.Portal.Model.YearReportPhoto" />
+    <EntitySet Name="Donor_Card" EntityType="CADA.Portal.Model.Donor_Card" />
+    <EntitySet Name="Project_Introduce" EntityType="CADA.Portal.Model.Project_Introduce" />
+    <EntitySet Name="Project_Introduce_Detail" EntityType="CADA.Portal.Model.Project_Introduce_Detail" />
+    <EntitySet Name="Project_Introduce_Detail_Log" EntityType="CADA.Portal.Model.Project_Introduce_Detail_Log" />
+    <EntitySet Name="Project_Introduce_Log" EntityType="CADA.Portal.Model.Project_Introduce_Log" />
+    <EntitySet Name="Region" EntityType="CADA.Portal.Model.Region" />
+    <EntitySet Name="Region_Log" EntityType="CADA.Portal.Model.Region_Log" />
+    <EntitySet Name="Visit_Form" EntityType="CADA.Portal.Model.Visit_Form" />
+    <EntitySet Name="Visit_Form_Detail" EntityType="CADA.Portal.Model.Visit_Form_Detail" />
+    <EntitySet Name="Volunteer_Form" EntityType="CADA.Portal.Model.Volunteer_Form" />
+    <EntitySet Name="YearReport" EntityType="CADA.Portal.Model.YearReport" />
+    <EntitySet Name="YearReport_Detail" EntityType="CADA.Portal.Model.YearReport_Detail" />
+    <EntitySet Name="YearReport_Detail_Log" EntityType="CADA.Portal.Model.YearReport_Detail_Log" />
+    <EntitySet Name="YearReport_Log" EntityType="CADA.Portal.Model.YearReport_Log" />
   </EntityContainer>
   <EntityType Name="HomePage_Message" Abstract="false">
     <Key>
@@ -34,22 +46,224 @@
     <Property Name="CreateName" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
     <Property Name="Action" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
   </EntityType>
-  <EntityType Name="YearReportMain">
+  <EntityType Name="Donor_Card">
     <Key>
       <PropertyRef Name="SID" />
     </Key>
-    <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
-    <Property Name="ReportYear" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
-    <Property Name="Remark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <Property Name="Video" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
-    <Property Name="VideoRemark" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Donor_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Child_ID" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DonorPhoto" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Template" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Message_To" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message_From" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Submit_day" />
   </EntityType>
-  <EntityType Name="YearReportPhoto">
+  <EntityType Name="Project_Introduce">
     <Key>
       <PropertyRef Name="SID" />
     </Key>
-    <Property Name="SID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
-    <Property Name="YearReportMainSID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Video" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Message" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Project_Introduce_Detail">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_Introduce_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo_Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo_Message" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Photo_Link" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Project_Introduce_Detail_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="Project_Introduce_SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_Introduce_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo_Title" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo_Message" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Photo_Link" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreateDay" />
+    <Property Type="String" Name="CreateBy" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateName" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Project_Introduce_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="Project_ID" />
+      <PropertyRef Name="Video" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Video" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Message" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreateDay" />
+    <Property Type="String" Name="CreateBy" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateName" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Photo_Day" />
+    <Property Type="String" Name="Photo_Message" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo_by" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Video" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Video_Day" />
+    <Property Type="String" Name="Video_Message" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Video_by" MaxLength="36" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Region_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Photo_Day" />
+    <Property Type="String" Name="Photo_Message" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Photo_by" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Video" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Video_Day" />
+    <Property Type="String" Name="Video_Message" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Video_by" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreateDay" />
+    <Property Type="String" Name="CreateBy" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateName" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Visit_Form">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name_Chi" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name_En" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ID_Card" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Birthday" />
+    <Property Type="String" Name="Sex" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Contact" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Province" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="City" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person_Relation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person_Contact" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Person_total" />
+  </EntityType>
+  <EntityType Name="Visit_Form_Detail">
+    <Key>
+      <PropertyRef Name="Detail_SID" />
+    </Key>
+    <Property Type="String" Name="Detail_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Visit_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="First_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Last_Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sex" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Birthday_Year" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Relation" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Volunteer_Form">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name_Chi" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name_En" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ID_Card" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Birthday" />
+    <Property Type="String" Name="Sex" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Contact" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Province" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="City" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person_Relation" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Exigent_Person_Contact" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Content_Interest" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Content_Support" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Submit_Day" />
+  </EntityType>
+  <EntityType Name="YearReport">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ReportYear" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Child_Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Child_Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Video" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VideoRemark" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="YearReport_Detail">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="YearReport_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Group_ID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MessageTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Orderby" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YearReport_Detail_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="YearReport_SID" />
+      <PropertyRef Name="Group_ID" />
+      <PropertyRef Name="Photo" />
+      <PropertyRef Name="MessageTitle" />
+      <PropertyRef Name="Message" />
+      <PropertyRef Name="Orderby" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="YearReport_SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Group_ID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Photo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MessageTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Orderby" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDay" />
+    <Property Type="String" Name="CreateBy" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateName" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="YearReport_Log">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="ReportYear" />
+      <PropertyRef Name="Video" />
+      <PropertyRef Name="VideoRemark" />
+    </Key>
+    <Property Type="String" Name="SID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Project_ID" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ReportYear" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="Child_Photo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Child_Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Video" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VideoRemark" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreateDay" />
+    <Property Type="String" Name="CreateBy" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CreateName" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

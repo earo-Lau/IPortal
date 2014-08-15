@@ -21,19 +21,15 @@ namespace CADA.Portal.Projects
         private void Init()
         {
             target1.Title = "项目目标1";
-            target1.CssClass = "one_half pro_target";
             target1.Text = "<p>项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容项目效果1内容</p>";
 
             target2.Title = "项目目标2";
-            target2.CssClass = "one_half_last pro_target";
             target2.Text = "<p>项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容项目效果2内容</p>";
 
             target3.Title = "项目目标3";
-            target3.CssClass = "one_half pro_target";
             target3.Text = "<p>项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容项目效果3内容</p>";
 
             target4.Title = "项目目标4";
-            target4.CssClass = "one_half_last pro_target";
             target4.Text = "<p>项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容项目效果4内容</p>";
         }
     }

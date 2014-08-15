@@ -208,7 +208,7 @@
 				id		= this.attr('id'),
 				opt		= this.data('options');
 
-        	$('<a/>', { id: id + '-back-' + index, href: 'javascript:void(0);', 'class': 'btn btn-primary button-back', html: opt.backLabel }).click(function() {
+        	$('<a/>', { id: id + '-back-' + index, href: 'javascript:void(0);', 'class': opt.backClass, html: opt.backLabel }).click(function() {
         		if (!opt.back || methods.execute.call($this, opt.back, index - 1)) {
         			methods.step.call($this, (index - 1) + 1);
         		}
@@ -218,7 +218,7 @@
 				id		= this.attr('id'),
 				opt		= this.data('options');
 
-        	$('<a/>', { id: id + '-next-' + index, href: 'javascript:void(0);', 'class': 'btn btn-primary button-next', html: opt.nextLabel }).click(function() {
+        	$('<a/>', { id: id + '-next-' + index, href: 'javascript:void(0);', 'class': opt.nextClass, html: opt.nextLabel }).click(function() {
         		if (!opt.next || methods.execute.call($this, opt.next, index + 1)) {
 					methods.step.call($this, (index + 1) + 1);
         		}
@@ -337,7 +337,9 @@
 		titleClick:		false,
 		titleTarget:	undefined,
 		validate:		false,
-		select: 		undefined
+		select: 		undefined,
+        nextClass:'btn button-next',
+        backClass:'btn button-back'
 	};
 
 })(jQuery);

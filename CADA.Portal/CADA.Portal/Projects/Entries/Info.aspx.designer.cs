@@ -22,13 +22,13 @@ namespace CADA.Portal.Projects.Entries {
         protected global::CADA.Portal.UCControl.JCarousel_Slider Pic_Slider;
         
         /// <summary>
-        /// video_Slider 控件。
+        /// Video_Slider 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::CADA.Portal.UCControl.JCarousel_Slider video_Slider;
+        protected global::CADA.Portal.UCControl.JCarousel_Video_Slider Video_Slider;
         
         /// <summary>
         /// lit_Content_Title 控件。
