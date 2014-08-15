@@ -1,0 +1,9 @@
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\CADA.Portal.Admin.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\CADA.Portal.Admin.pdb
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\obj\Debug\CADA.Portal.Admin.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\obj\Debug\CADA.Portal.Admin.pdb
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\CADA.Portal.Admin.Model.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\CADA.Portal.Admin.Model.pdb
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\obj\Debug\CADA.Portal.Admin.csprojResolveAssemblyReference.cache
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\Newtonsoft.Json.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin\bin\Newtonsoft.Json.xml

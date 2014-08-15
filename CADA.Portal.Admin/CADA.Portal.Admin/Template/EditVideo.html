@@ -1,0 +1,97 @@
+﻿<div class="modal-header wgreen">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        ×</button>
+    <h3 id="myModalLabel">
+        @Title</h3>
+</div>
+<form id="VideoForm" action="@Action" method="post">
+<div class="row-fluid">
+    <div class="block-fluid">
+        <div class="row-form">
+            <div class="span2">
+                <span>视频:</span>
+            </div>
+            <div class="span10">
+                @Video
+                <div class="input-append file">
+                    <input type="file" name="file_Video" />
+                    <input type="text" style="width: auto;" />
+                    <button class="btn btn-primary" onclick="return false;">
+                        浏览</button>
+                </div>
+            </div>
+        </div>
+        <div class="row-form">
+            <div class="span2">
+                <span>缩略图:</span>
+            </div>
+            <div class="span10">
+                @Thumb
+                <div class="input-append file">
+                    <input type="file" name="file_Thumb" />
+                    <input type="text" style="width: auto;" />
+                    <button class="btn btn-primary" onclick="return false;">
+                        浏览</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".file .btn, .file input:text").click(function () {
+                var block = $(this).parent('.file');
+                block.find('input:file').click();
+                block.find('input:file').change(function () {
+                    block.find('input:text').val(block.find('input:file').val());
+                });
+            });
+        </script>
+        <div class="row-form">
+            <div class="span2">
+                <span>摄于:</span>
+            </div>
+            <div class="span10">
+                <input type="text" name="Produce_By" value="@Produce_By" />
+            </div>
+        </div>
+        <div class="row-form">
+            <div class="span2">
+                <span>发布时间:</span>
+            </div>
+            <div class="span10">
+                <input type="text" name="Publish_Day" class="datepicker" value="@Publish_Day" />
+                <script type="text/javascript">
+                    $(".datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+                </script>
+            </div>
+        </div>
+        <div class="row-form">
+            <div class="span12">
+                <span class="title">文本内容:</span>
+                <textarea name="Message">@Message</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <input type="submit" class="btn btn-primary" value="保存" aria-hidden="true" />
+    <input type="button" class="btn btn-warning" value="关闭" data-dismiss="modal" aria-hidden="true" />
+</div>
+</form>
+<script type="text/javascript">
+    // Attach a submit handler to the form
+    $("#VideoForm").submit(function (event) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        // Get some values from elements on the page:
+        $(this).ajaxSubmit({
+            success: function (data) {
+                alert('保存成功');
+                $("#editDialog").modal('hide');
+            },
+            error: function (xhr, status, error) {
+                console.info(xhr);
+                alert('保存失败，原因：' + error);
+            }
+        });
+
+    });
+</script>

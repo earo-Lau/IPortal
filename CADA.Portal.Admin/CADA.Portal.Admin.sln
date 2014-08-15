@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal.Admin", "CADA.Portal.Admin\CADA.Portal.Admin.csproj", "{49A0F127-4EEC-4C96-888C-351F44FF9A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADA.Portal.Admin.Model", "CADA.Portal.Admin.Model\CADA.Portal.Admin.Model.csproj", "{D4A794AE-A65C-4CD2-9DC3-AFBA7E5B4E88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A0F127-4EEC-4C96-888C-351F44FF9A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A0F127-4EEC-4C96-888C-351F44FF9A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A0F127-4EEC-4C96-888C-351F44FF9A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A0F127-4EEC-4C96-888C-351F44FF9A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A794AE-A65C-4CD2-9DC3-AFBA7E5B4E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A794AE-A65C-4CD2-9DC3-AFBA7E5B4E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A794AE-A65C-4CD2-9DC3-AFBA7E5B4E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A794AE-A65C-4CD2-9DC3-AFBA7E5B4E88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

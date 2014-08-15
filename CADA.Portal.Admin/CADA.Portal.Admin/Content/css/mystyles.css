@@ -1,0 +1,63 @@
+/* please use this file for your own styles 
+ * it's need for easiest update of newest wersions
+*/
+
+video
+{
+    width:100%;
+    height:100%;
+}
+
+.row-form.rightbtn
+{
+    text-align:right;
+}
+
+.block.title .head
+{
+    margin-bottom:20px;
+}
+
+
+/* Colors
+--------------------------------------------------*/
+.Louts
+{
+    background:#ffc773;
+}
+
+.lpurple
+{
+    background:#cca4e3 !important;
+}
+
+.dpurple
+{
+    background:#8d4bbb !important;
+}
+
+.dgreen
+{
+    background:#0eb83a !important;
+}
+.wgreen
+{
+    background:#a4e2c6 !important;
+}
+.ddgreen
+{
+    background:#057748 !important;
+}
+
+.pink
+{
+    background:#ffb3a7 !important;
+}
+
+.block .head.dpurple *, .block .head.lpurple *
+,.block .head.dgreen *
+{
+    color: #FFF !important;
+    border-color: #FFF !important;
+}
+

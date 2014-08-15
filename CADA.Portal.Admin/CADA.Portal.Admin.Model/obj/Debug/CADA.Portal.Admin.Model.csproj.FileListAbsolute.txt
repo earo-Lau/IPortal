@@ -1,0 +1,5 @@
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin.Model\bin\Debug\CADA.Portal.Admin.Model.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin.Model\bin\Debug\CADA.Portal.Admin.Model.pdb
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin.Model\obj\Debug\CADA.Portal.Admin.Model.dll
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin.Model\obj\Debug\CADA.Portal.Admin.Model.pdb
+D:\project\CADA\CADA.Portal.Admin\CADA.Portal.Admin\CADA.Portal.Admin.Model\obj\Debug\CADA.Portal.Admin.Model.csprojResolveAssemblyReference.cache
