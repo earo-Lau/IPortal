@@ -1,0 +1,250 @@
+﻿
+/*   重写 Metro*/
+.metro a {
+    color: #000;
+}
+
+.metro .container {
+    position: relative;
+}
+
+.metro .content {
+    margin-top: 54px;
+}
+
+.metro .horizontal-menu.compact li a {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.metro .horizontal-menu li {
+    margin: 0 auto;
+}
+
+    .metro .horizontal-menu li:last-child {
+        margin-left: 20px;
+    }
+
+.metro .tab-control .tabs > li:first-child {
+    margin-left: 0px;
+}
+
+.metro .tab-control .tabs > li {
+    height: 40px;
+    background: transparent;
+}
+
+    .metro .tab-control .tabs > li > a {
+        width: 120px;
+        height: 40px;
+        color: #006699;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 900;
+        border: 1px solid #D5D5D5;
+        border-bottom: 0px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background: #d5ebfa;
+    }
+
+    .metro .tab-control .tabs > li.active a {
+        border-top: 0px;
+    }
+
+/*  自定义*/
+
+.bgs {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 145px;
+}
+
+/*  分享组件*/
+.share {
+    width: 180px;
+    height: 30px;
+    padding: 0 5px;
+    background: #eee;
+}
+
+    .share a {
+        float: left;
+        width: 22px;
+        height: 30px;
+        font-size: 12pt;
+        line-height: 20px;
+        margin-right: 2px;
+        color: #000;
+    }
+
+        .share a.more {
+            width: 70px;
+            height: 30px;
+            padding: 5px 0 0 20px;
+            background: url('/Image/share.png') no-repeat left center transparent;
+        }
+
+        .share a.qzone {
+            background: url('/Image/share.png') no-repeat -70px center transparent;
+        }
+
+        .share a.weibo {
+            background: url('/Image/share.png') no-repeat -93px center transparent;
+        }
+
+        .share a.tencent {
+            background: url('/Image/share.png') no-repeat -115px center transparent;
+        }
+
+        .share a.weixin {
+            background: url('/Image/share.png') no-repeat -138px center transparent;
+        }
+
+/*  Tab容器*/
+.frame {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: 0px;
+}
+
+.tab-control .report {
+    margin-right: 0px !important;
+    border: 0px;
+}
+
+.metro .tab-control .tabs > li.report a {
+    border: 0px;
+    border-radius: 0px;
+}
+
+/*  首页  */
+
+/*  欢迎  */
+.welcome {
+    background: #fef5dc;
+}
+
+.metro .panel {
+    border: 0px;
+}
+
+.welcome .titleLeft {
+    padding-left: 45px;
+    height: 45px;
+    line-height: 40px;
+    background: url('/Image/icons.png') no-repeat -3px -2px;
+}
+
+.welcome .titleRight {
+    height: 45px;
+    line-height: 40px;
+    margin-left: 0px !important;
+    padding-left: 10px;
+    background: url('/Image/icons.png') no-repeat -10px -50px;
+}
+
+.metro .welcome .titleRight a {
+    color: #000;
+}
+
+.metro .welcome .children {
+    /*padding:0 7px;*/
+    margin: 7px 10px;
+}
+
+    .metro .welcome .children .tile {
+        width: 130px;
+        height: 130px;
+    }
+
+.tile.one-more-child a {
+    position: relative;
+}
+
+    .tile.one-more-child a.button {
+        position: absolute;
+        left: 45px;
+        top: 45px;
+        height: 40px;
+        width: 40px;
+        background: url('/Image/icons.png') no-repeat scroll -135px -95px transparent;
+    }
+
+.tile.one-more-child:hover a.button {
+    display: none;
+}
+
+.tile.one-more-child a.button-hover {
+    display: none;
+}
+
+.tile.one-more-child:hover a.button-hover {
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #3e3e3e;
+    left: -3px;
+    top: 40px;
+    height: 40px;
+    width: 130px;
+    line-height: 40px;
+    font-size: 14px;
+    background: url('/Image/icons.png') no-repeat scroll 0px -95px transparent;
+}
+
+/*  收件箱     */
+.metro .inbox {
+    background: #ecf6e6;
+}
+
+.metro .panel .panel-header {
+    padding-bottom: 0px;
+}
+
+.metro .panel-header .header {
+    float: left;
+    margin-left: 10px;
+}
+
+.metro .panel-header h3 {
+    margin-bottom: 0px;
+}
+
+.metro .panel-header h5 {
+    margin-top: 0px;
+}
+
+.metro .inbox .panel-header h3, .metro .inbox .panel-header h5 {
+    color: #7bab42 !important;
+}
+
+.metro .icon-inbox {
+    background: url('/Image/icons.png') no-repeat -3px -140px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.metro .inbox .panel .panel-content ul {
+    margin:0px 5px;
+}
+
+    .metro .inbox .panel .panel-content ul li {
+        border-left: 2px solid #7dc058;
+        height: 30px;
+        background: #e1f0d8;
+        padding: 5px;
+        margin-bottom:7px;
+    }
+
+        .metro .inbox .panel .panel-content ul li:hover {
+            background: #cde6be;
+        }
+
+        .metro .inbox .panel .panel-content ul li .date {
+            color: #999999;
+        }
