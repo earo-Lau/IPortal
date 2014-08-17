@@ -84,23 +84,23 @@
             width: 70px;
             height: 30px;
             padding: 5px 0 0 20px;
-            background: url('/Image/share.png') no-repeat left center transparent;
+            background: url('../Image/share.png') no-repeat left center transparent;
         }
 
         .share a.qzone {
-            background: url('/Image/share.png') no-repeat -70px center transparent;
+            background: url('../Image/share.png') no-repeat -70px center transparent;
         }
 
         .share a.weibo {
-            background: url('/Image/share.png') no-repeat -93px center transparent;
+            background: url('../Image/share.png') no-repeat -93px center transparent;
         }
 
         .share a.tencent {
-            background: url('/Image/share.png') no-repeat -115px center transparent;
+            background: url('../Image/share.png') no-repeat -115px center transparent;
         }
 
         .share a.weixin {
-            background: url('/Image/share.png') no-repeat -138px center transparent;
+            background: url('../Image/share.png') no-repeat -138px center transparent;
         }
 
 /*  Tab容器*/
@@ -135,7 +135,7 @@
     padding-left: 45px;
     height: 45px;
     line-height: 40px;
-    background: url('/Image/icons.png') no-repeat -3px -2px;
+    background: url('../Image/icons.png') no-repeat -3px -2px;
 }
 
 .welcome .titleRight {
@@ -143,7 +143,7 @@
     line-height: 40px;
     margin-left: 0px !important;
     padding-left: 10px;
-    background: url('/Image/icons.png') no-repeat -10px -50px;
+    background: url('../Image/icons.png') no-repeat -10px -50px;
 }
 
 .metro .welcome .titleRight a {
@@ -170,7 +170,7 @@
         top: 45px;
         height: 40px;
         width: 40px;
-        background: url('/Image/icons.png') no-repeat scroll -135px -95px transparent;
+        background: url('../Image/icons.png') no-repeat scroll -135px -95px transparent;
     }
 
 .tile.one-more-child:hover a.button {
@@ -192,7 +192,7 @@
     width: 130px;
     line-height: 40px;
     font-size: 14px;
-    background: url('/Image/icons.png') no-repeat scroll 0px -95px transparent;
+    background: url('../Image/icons.png') no-repeat scroll 0px -95px transparent;
 }
 
 /*  收件箱     */
@@ -222,7 +222,7 @@
 }
 
 .metro .icon-inbox {
-    background: url('/Image/icons.png') no-repeat -3px -140px;
+    background: url('../Image/icons.png') no-repeat -3px -140px;
     margin-top: 5px;
     width: 50px;
     height: 50px;
