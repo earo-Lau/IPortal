@@ -62,6 +62,18 @@
     top: 145px;
 }
 
+/*  脚部  */
+footer{
+    background:#73bdee;
+    margin-top:20px;
+    padding:20px;
+}
+
+.metro footer p{
+    color:#fff;
+    font-size:13px;
+}
+
 /*  分享组件*/
 .share {
     width: 180px;
@@ -118,6 +130,26 @@
 .metro .tab-control .tabs > li.report a {
     border: 0px;
     border-radius: 0px;
+}
+
+.mainContent{
+    padding:20px;
+}
+.metro .panel .panel-header {
+    padding-bottom: 0px;
+}
+
+.metro .panel-header .header {
+    float: left;
+    margin-left: 10px;
+}
+
+.metro .panel-header h3 {
+    margin-bottom: 0px;
+}
+
+.metro .panel-header h5 {
+    margin-top: 0px;
 }
 
 /*  首页  */
@@ -200,23 +232,6 @@
     background: #ecf6e6;
 }
 
-.metro .panel .panel-header {
-    padding-bottom: 0px;
-}
-
-.metro .panel-header .header {
-    float: left;
-    margin-left: 10px;
-}
-
-.metro .panel-header h3 {
-    margin-bottom: 0px;
-}
-
-.metro .panel-header h5 {
-    margin-top: 0px;
-}
-
 .metro .inbox .panel-header h3, .metro .inbox .panel-header h5 {
     color: #7bab42 !important;
 }
@@ -248,3 +263,60 @@
         .metro .inbox .panel .panel-content ul li .date {
             color: #999999;
         }
+
+/*  最新活动信息  */
+.metro .events {
+    background:#e1f5fd;
+    padding:0 7px;
+}
+
+.metro .events .panel-header h3, .metro .events .panel-header h5 {
+    color: #006699 !important;
+}
+.metro .icon-events {
+    background: url('../Image/icons.png') no-repeat -55px -140px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+/*  最新项目进展  */
+.metro .project-progress {
+    background:#fcebf3;
+    padding:0 7px;
+}
+
+.metro .project-progress .panel-header h3, .metro .project-progress .panel-header h5 {
+    color: #d1598b !important;
+}
+.metro .project-progress .panel-header h5{
+    font-size:1.2rem;
+}
+.metro .icon-project-progress {
+    background: url('../Image/icons.png') no-repeat -102px -140px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+/*  社会媒体分享  */
+.metro .social {
+    background:#fce6da;
+    padding:0 7px;
+}
+
+.metro .social .panel-header h3, .metro .social .panel-header h5 {
+    color: #ea5504 !important;
+}
+.metro .social .panel-header h5{
+    font-size:1.2rem;
+}
+.metro .icon-social {
+    background: url('../Image/icons.png') no-repeat -102px -140px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}

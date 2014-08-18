@@ -21,7 +21,7 @@
     <div class="bgs">
         <img src="Image/bgs/blue-bg.jpg" />
     </div>
-    <div class="container">
+    <div class="container clearfix">
         <!--Begin Header-->
         <div class="header">
             <div class="grid clearfix">
@@ -57,6 +57,7 @@
         <!--End Header-->
         <!--Begin Content-->
         <div class="content">
+            <!--Begin Tabs-->
             <div class="tab-control" data-role="tab-control">
                 <ul class="tabs">
                     <li class="active"><a href="#">我的主页</a></li>
@@ -66,101 +67,205 @@
                     <li><a href="#">助养指南</a></li>
                     <li class="place-right report"><a class="bg-hover-amber bg-yellow fg-white" href="#">项目报告</a></li>
                 </ul>
-                <div class="frame">
-                    <div class="grid fluid">
-                        <div class="row">
-                            <div class="span8 welcome">
-                                <div class="panel">
-                                    <div class="panel-content">
-                                        <h5>Welcome back to know their world.</h5>
-                                        <div class="title clearfix">
-                                            <div class="titleLeft span8">
-                                                <strong>我助养的儿童们</strong>
-                                            </div>
-                                            <div class="titleRight span4">
-                                                <a href="#"><strong>查看所有已助养儿童<i class="icon-arrow-right-5"></i></strong></a>
-                                            </div>
+            </div>
+            <!--End Tabs-->
+            <!--Begin Main-->
+            <div class="frame">
+                <div class="mainContent grid fluid">
+                    <div class="row">
+                        <!--Begin Welcome-->
+                        <div class="span8 welcome">
+                            <div class="panel">
+                                <div class="panel-content">
+                                    <h5>Welcome back to know their world.</h5>
+                                    <div class="title clearfix">
+                                        <div class="titleLeft span8">
+                                            <strong>我助养的儿童们</strong>
                                         </div>
-                                        <div class="children clearfix">
-                                            <div class="tile bg-white border">
-                                                <div class="tile-content">
-                                                    <img src="Image/children/child1.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="tile bg-white border">
-                                                <div class="tile-content">
-                                                    <img src="Image/children/child2.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="tile bg-white border">
-                                                <div class="tile-content">
-                                                    <img src="Image/children/child3.jpg" />
-                                                </div>
-                                            </div>
-                                            <div class="tile bg-white border one-more-child">
-                                                <div class="tile-content">
-                                                    <a href="#">
-                                                        <a class="button"></a>
-                                                        <a class="button-hover">再助养一名儿童</a>
-                                                        <img src="Image/one-more-child.jpg" />
-                                                    </a>
-                                                </div>
-                                            </div>
+                                        <div class="titleRight span4">
+                                            <a href="#"><strong>查看所有已助养儿童<i class="icon-arrow-right-5"></i></strong></a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="span4 inbox">
-                                <div class="panel">
-                                    <div class="panel-header fluid bg-transparent clearfix">
-                                        <div class="icon-inbox"></div>
-                                        <div class="header">
-                                            <h3>收件箱</h3>
-                                            <h5>Inbox</h5>
+                                    <div class="children clearfix">
+                                        <div class="tile bg-white border">
+                                            <div class="tile-content">
+                                                <img src="Image/children/child1.jpg" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="panel-content">
-                                        <ul class="unstyled">
-                                            <li>
-                                                <div class="clearfix">
-                                                    <a class="place-left" href="#">你已成功助养Jessica...</a>
-                                                    <span class="place-right date">14-05-03</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="clearfix">
-                                                    <a class="place-left" href="#">你的助养款已收到...</a>
-                                                    <span class="place-right date">14-05-03</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="clearfix">
-                                                    <a class="place-left" href="#">你已成功助养Liliana...</a>
-                                                    <span class="place-right date">14-05-03</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="clearfix">
-                                                    <a class="place-left" href="#">新的活动已经开展...</a>
-                                                    <span class="place-right date">14-05-03</span>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="clearfix">
-                                                    <a class="place-left" href="#">2014年项目进展报告...</a>
-                                                    <span class="place-right date">14-05-03</span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <div class="tile bg-white border">
+                                            <div class="tile-content">
+                                                <img src="Image/children/child2.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="tile bg-white border">
+                                            <div class="tile-content">
+                                                <img src="Image/children/child3.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="tile bg-white border one-more-child">
+                                            <div class="tile-content">
+                                                <a href="#">
+                                                    <a class="button"></a>
+                                                    <a class="button-hover">再助养一名儿童</a>
+                                                    <img src="Image/one-more-child.jpg" />
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--End Welcome-->
+                        <!--Begin Inbox-->
+                        <div class="span4 inbox">
+                            <div class="panel">
+                                <div class="panel-header fluid bg-transparent clearfix">
+                                    <div class="icon-inbox"></div>
+                                    <div class="header">
+                                        <h3>收件箱</h3>
+                                        <h5>Inbox</h5>
+                                    </div>
+                                </div>
+                                <div class="panel-content">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <div class="clearfix">
+                                                <a class="place-left" href="#">你已成功助养Jessica...</a>
+                                                <span class="place-right date">14-05-03</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix">
+                                                <a class="place-left" href="#">你的助养款已收到...</a>
+                                                <span class="place-right date">14-05-03</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix">
+                                                <a class="place-left" href="#">你已成功助养Liliana...</a>
+                                                <span class="place-right date">14-05-03</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix">
+                                                <a class="place-left" href="#">新的活动已经开展...</a>
+                                                <span class="place-right date">14-05-03</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="clearfix">
+                                                <a class="place-left" href="#">2014年项目进展报告...</a>
+                                                <span class="place-right date">14-05-03</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Inbox-->
+                    </div>
+                    <div class="row">
+                        <!--Begin Latest Events-->
+                        <div class="span4 events">
+                            <div class="panel">
+                                <div class="panel-header fluid bg-transparent clearfix">
+                                    <div class="icon-events"></div>
+                                    <h3>最新活动信息</h3>
+                                    <h5>Latest Events</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <img src="Image/体验饥饿.jpg" />
+                                    <div class="block">
+                                        <h4>无障碍设施改造</h4>
+                                        <p>摘要：本项目目的是为了不让有特殊需要儿童因家庭贫困而错失康复机会，可以继续接受康复教育，使他们以后可以自立或班自立于社会。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Latest Events-->
+                        <!--Begin Project Progress-->
+                        <div class="span4 project-progress">
+                            <div class="panel">
+                                <div class="panel-header fluid bg-transparent clearfix">
+                                    <div class="icon-project-progress"></div>
+                                    <h3>最新项目进展</h3>
+                                    <h5>Recent Progress of the Project</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <img src="Image/项目进展.jpg" />
+                                    <div class="block">
+                                        <h4>无障碍设施改造</h4>
+                                        <p>摘要：本项目目的是为了不让有特殊需要儿童因家庭贫困而错失康复机会，可以继续接受康复教育，使他们以后可以自立或班自立于社会。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Project Progress-->
+                        <!--Begin Social Share-->
+                        <div class="span4 social">
+                            <div class="panel">
+                                <div class="panel-header fluid bg-transparent clearfix">
+                                    <div class="icon-social"></div>
+                                    <h3>社会媒体分享</h3>
+                                    <h5>Share in Social Media</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <div class="span3">
+                                                <img src="Image/social/weibo1.jpg" style="height:100%;" />
+                                            </div>
+                                            <div class="span9">
+                                                <img src="Image/social/weibo1n.png" />
+                                                <p>謝謝曼婷為我做的禮服〜愛妳〜今天下午有宣明會飢餓30的記者會，希望能盡些力幫助需要幫助的孩子們！晚點見啦〜感謝上帝的安排讓我們</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="span3">
+                                                <img src="Image/social/weibo2.jpg" style="height:100%;" />
+                                            </div>
+                                            <div class="span9">
+                                                <img src="Image/social/weibo2n.png" />
+                                                <p>這是一個很棒的生日禮物！一些歌迷用我的名義透過世界宣明會給貧困家庭送出一些希望之禮！這裡一共送出12頭羊、41隻雞、6組魚、協</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Social Share-->
+                    </div>
+                </div>
+            </div>
+            <!--End Main-->
+        </div>
+        <!--End Content-->
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copyright grid">
+                <div class="row">
+                    <div class="span7">
+                        <p>
+                            ©2012-2014 集善残疾儿童助养网站版权所有
+                        </p>
+                        <p>
+                            注：2013-14年度「体验饥饿」为世界宣明会授权中国残疾人福利基金会举办之慈善活动
+                        </p>
+                        <p>
+                            京ICP备13040732号-1
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <img src="Image/bgs/foot-logo.jpg" style="margin-top:10px;" />
+                    </div>
+                    <div class="span2">
+                        <img src="Image/bgs/qr-code.jpg" />
                     </div>
                 </div>
             </div>
         </div>
-        <!--End Content-->
-    </div>
+    </footer>
 </body>
 </html>
