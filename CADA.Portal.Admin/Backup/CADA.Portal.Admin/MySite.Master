@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.master.cs" Inherits="CADA.Portal.Admin.MySite" %>
+
+<!DOCTYPE html >
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link type="text/css" rel="stylesheet" href="~/Content/css/ie.css" />
+        <script type='text/javascript' src='<%=ResolveClientUrl("~/Content/js/plugins/other/lte-ie7.js") %>'></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="~/Content/css/stylesheets.css" />
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/jquery/jquery-1.9.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/jquery/jquery-form-3.46.0.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/jquery/jquery-ui-1.10.1.custom.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/jquery/jquery-migrate-1.1.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/cookies/jquery.cookies.2.2.0.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/bootstrap/bootstrap.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/plugins/uniform/jquery.uniform.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/custom.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Content/js/actions.js") %>"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="loader">
+        <img src="<%=ResolveUrl("~/Content/img/loader.gif") %>"></div>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="top">
+                <a href="<%=ResolveUrl("~/Index.aspx") %>" class="logo"></a>
+            </div>
+            <div class="nContainer">
+                <ul class="navigation">
+                    <li class="active"><a href="<%=ResolveUrl("~/Index.aspx") %>" class="blblue">首页</a></li>
+                    <li><a href="#" class="blyellow">项目</a>
+                        <div class="open">
+                        </div>
+                        <ul>
+                            <li><a href="<%=ResolveUrl("~/Projects.aspx?Id=BJ") %>">甘肃宝鸡</a></li>
+                            <li><a href="<%=ResolveUrl("~/Projects.aspx?Id=XD") %>">陕西定西</a></li>
+                            <li><a href="<%=ResolveUrl("~/Projects.aspx?Id=JZ") %>">湖北荆州</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="blred">年报</a>
+                        <div class="open">
+                        </div>
+                        <ul>
+                            <li><a href="<%=ResolveUrl("~/Reports.aspx?Id=BJ") %>">甘肃宝鸡</a></li>
+                            <li><a href="<%=ResolveUrl("~/Reports.aspx?Id=XD") %>">陕西定西</a></li>
+                            <li><a href="<%=ResolveUrl("~/Reports.aspx?Id=JZ") %>">湖北荆州</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="blpurple">其他</a> </li>
+                </ul>
+                <a class="close"><span class="ico-remove"></span></a>
+            </div>
+            <div class="widget">
+                <div class="datepicker">
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+    </form>
+    <div class="dialog" id="source" style="display: none;" title="Source">
+    </div>
+</body>
+</html>
